@@ -1,0 +1,338 @@
+{
+  "ev": {
+    "market_sizing": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "future_outlook": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "focus_reports": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "thematic_reports": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "databases": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "survey": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }]
+  },
+  "solar": {
+   "market_sizing": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "future_outlook": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "focus_reports": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "thematic_reports": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "databases": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "survey": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }]
+  },
+  "wind": {
+    "market_sizing": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "future_outlook": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "focus_reports": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "thematic_reports": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "databases": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "survey": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }]
+  },
+  "hydrogen": {
+    "market_sizing": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "future_outlook": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "focus_reports": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "thematic_reports": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "databases": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "survey": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }]
+  },
+  "bess": {
+    "market_sizing": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "future_outlook": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "focus_reports": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "thematic_reports": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "databases": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "survey": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }]
+  },
+  "power": {
+    "market_sizing": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "future_outlook": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "focus_reports": [
+        {
+            "title":"report_name",
+            "report_url":""
+        },
+        {
+            "title":"report_name",
+            "report_url":""
+        }
+    ],
+    "thematic_reports": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "databases": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }],
+    "survey": [ {
+        "title":"report_name",
+        "report_url":""
+    },
+    {
+        "title":"report_name",
+        "report_url":""
+    }]
+  }
+}
