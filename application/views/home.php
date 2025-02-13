@@ -20,7 +20,8 @@
 
         <img src="<?= base_url('assets/images/final-logo-ecosystem.png') ?>" class="w-100 h-80" alt="home-page-banner">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="icofont-navigation-menu fs-30"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -47,202 +48,257 @@
 
   <!-- Hero Section -->
   <div class="overflow-hidden hero  container-fluid" style="background-color: #d0ddf7;">
-    <div class="hero-section py-1" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; align-items: end;">
-      <div class="text-container" style="flex: 1 1 45%; padding: 10px; max-width: 45%;">
-        <p class="fs-40 fw-bold display-6">
+    <div class="hero-section pb-5 row" style="align-items: start; justify-content: space-between;">
+      <div class="text-container w-sm-100 col-md-5" style="height:100%; padding: 10px 10px 50px 10px;">
+        <p class="md-text-h1 text-dark">
           Market Intelligence for Enabling Indian Energy Transition
         </p>
       </div>
-      <div class="video-container " style="flex: 1 1 55%;  max-width: 55%;">
-        <img src="<?= base_url('assets/images/accord.svg') ?>" style="position: relative;right: -31px;top: -13px;" class="img-fluid" alt="home-page-banner">
+      <div class="video-container col-md-7">
+        <img src="<?= base_url('assets/images/accord.svg') ?>" style="position: relative;right: -31px;top: -13px;"
+          class="img-fluid" alt="home-page-banner">
       </div>
     </div>
-
-    
-   </div>
   </div>
+
   <!-- Eco System Report   -->
-   <section>
-    <div class="hero py-5">
-      <div class="d-flex flex-column flex-md-row gap-3 mt-1 py-3" style="">
-      <!-- card1 -->
-      <a href="<?= base_url("reports") ?>" class="card overflow-hidden w-100 card-overlay ">
-        <div class="card-body position-relative py-4 px-3">
-          <img src="<?= base_url() ?>assets/images/ECO SYSTEM REPORTS.jpg" class="d-none d-lg-block" alt="" />
-          <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
-            ECO SYSTEM REPORTS
+  <section style="background-color: #EBE3E0;" class="position-relative">
+    <div class="hero p-0 position-relative" style="background:none; top:-120px">
+      <div class="container-fluid">
+        <div class="row row-gap-3 py-3">
+          <!-- card1 -->
+          <div class="col-md-3">
+            <a href="<?= base_url("reports") ?>" class="card   overflow-hidden w-100 card-overlay ">
+              <div class="card-body card-height-173 position-relative py-4">
+                <img src="<?= base_url() ?>assets/images/ECO SYSTEM REPORTS.jpg" class="d-none d-md-block" alt="" />
+                <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
+                  <span>ECO SYSTEM REPORTS</span>
+                  <i class="icofont-external-link"></i>
+                </h2>
+                <p class="card-text pt-2 position-relative z-1" style="max-width: 19.21rem;">
+                  Ford ahead with locking oppurtunities across India's energy transition.
+                </p>
+              </div>
+            </a>
+          </div>
 
-            <i class="icofont-external-link"></i>
-          </h2>
-          <p class="card-text pt-2 position-relative z-1">
-            Ford ahead with locking oppurtunities across India's energy transition.
-          </p>
+          <div class="col-md-3">
+            <a href="<?= base_url('custom_page') ?>" class="card overflow-hidden w-100 hero-card-overlay ">
+              <div class="card-body position-relative py-4">
+                <img src="<?= base_url() ?>assets/images/CUSTOM REQUIREMENTS.jpg" class="d-none d-lg-block" alt="" />
+                <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
+                  CUSTOM REQUIREMENTS
+
+                  <i class="icofont-external-link"></i>
+                </h2>
+                <p class="card-text pt-2 position-relative z-1" style="max-width: 19.21rem;">
+                  Address your energy transition needs using tailored research.
+                </p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-md-3">
+            <!-- card2 -->
+            <a href="<?= base_url('') ?>" class="card overflow-hidden w-100  hero-card-overlay">
+              <div class="card-body position-relative py-4">
+                <img src="<?= base_url() ?>assets/images/SURVEYS AND VOC.jpg" class="d-none d-lg-block" alt="" />
+                <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
+                  SURVEYS & VoC
+
+                  <i class="icofont-external-link"></i>
+                </h2>
+                <p class="card-text pt-2 position-relative z-1" style="max-width: 19.21rem;">
+
+                  Learn energy transition market signals & orient your product to tap early advantage.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <!-- card3 -->
+            <a href="<?= base_url('event') ?>" class="card overflow-hidden w-100 hero-card-overlay ">
+              <div class="card-body position-relative py-4">
+                <img src="<?= base_url() ?>assets/images/WEBINARS & INTERVIEWA.jpg" class="d-none d-lg-block" alt="" />
+                <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
+                  WEBINARS & INTERVIEWS
+                  <!-- <img src="" class="opacity-75" alt="arrow" class="ms-2" /> -->
+                  <i class="icofont-external-link"></i>
+                </h2>
+                <p class="card-text pt-2 position-relative z-1" style="max-width: 19.21rem;">
+                  Understand the energy transition market perspective from seasoned professionals & experts
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-      </a>
-
-      <a href="<?= base_url('custom_page') ?>" class="card overflow-hidden w-100 hero-card-overlay ">
-        <div class="card-body position-relative py-4 px-3">
-          <img src="<?= base_url() ?>assets/images/CUSTOM REQUIREMENTS.jpg" class="d-none d-lg-block" alt="" />
-          <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
-            CUSTOM REQUIREMENTS
-
-            <i class="icofont-external-link"></i>
-          </h2>
-          <p class="card-text pt-2 position-relative z-1">
-            Address your energy transition needs using tailored research.
-          </p>
-        </div>
-      </a>
-
-      <!-- card2 -->
-      <a href="<?= base_url('') ?>" class="card overflow-hidden w-100  hero-card-overlay">
-        <div class="card-body position-relative py-4 px-3">
-          <img src="<?= base_url() ?>assets/images/SURVEYS AND VOC.jpg" class="d-none d-lg-block" alt="" />
-          <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
-            SURVEYS & VoC
-
-            <i class="icofont-external-link"></i>
-          </h2>
-          <p class="card-text pt-2 position-relative z-1">
-
-            Learn energy transition market signals & orient your product to tap early advantage.
-          </p>
-        </div>
-      </a>
-      <!-- card3 -->
-      <a href="<?= base_url('event') ?>" class="card overflow-hidden w-100 hero-card-overlay ">
-        <div class="card-body position-relative py-4 px-3">
-          <img src="<?= base_url() ?>assets/images/WEBINARS & INTERVIEWA.jpg" class="d-none d-lg-block" alt="" />
-          <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
-            WEBINARS & INTERVIEWS
-            <!-- <img src="" class="opacity-75" alt="arrow" class="ms-2" /> -->
-            <i class="icofont-external-link"></i>
-          </h2>
-          <p class="card-text pt-2 position-relative z-1">
-            Understand the energy transition market perspective from seasoned professionals & experts
-          </p>
-        </div>
-      </a>
+      </div>
     </div>
-   
-  
-    </div></section>
+  </section>
 
   <!-- bg-primary section second placeholder overlapping  -->
-  <div class="container-fluid py-4 our-research" style="background-color: #EBE3E0;" >
 
-    <div class="row " style="margin-top: 4rem;">
-      <div class="col-md-5">
-        <p class="research-title h4 mb-3 section-header   fs-20  " style="font-weight: 800; color: #5866ff !important;">ECO SYSTEM REPORTS</p>
-        <h2 class="mb-4" style="font-size: 2.25rem; font-weight: 800; line-height: 140%;">
-          We analyse the following <br>areas across the energy <br> transition:
+  <style>
+    .research-tab-heading {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4rem;
+    }
+
+    .text-h3-accord {
+      font-size: 1.75rem;
+      font-weight: 400;
+      line-height: 2.538rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .research-tab-heading {
+        font-size: 1.313rem;
+        font-weight: 600;
+        line-height: 1.838rem;
+      }
+
+      .text-h3-accord {
+        font-size: 2.25rem;
+        font-weight: 400;
+        line-height: 3.15rem;
+      }
+    }
+  </style>
+  <!-- bg-primary section second placeholder overlapping  -->
+  <div class="container-fluid pb-4 our-research" style="background-color: #EBE3E0;">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="research-title h4 mb-3 section-header fs-20" style="font-weight: 800; color: #5866ff !important;">
+          ECO SYSTEM REPORTS
+        </p>
+        <h2 class="mb-4 text-h3-accord">
+          We analyse the following areas across the energy transition:
         </h2>
 
-
-        <div class="accordion" id="researchAccordion" style="width:80%;">
-          <div class="accordion ">
+        <div class="accordion" id="researchAccordion" style="background-color: #EBE3E0;">
+          <div class="accordion-item" style="background-color: #EBE3E0; border: none;">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button border-top  border-1 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-01.037f2f.svg" class="icon me-3" alt="" />
-                <span class="research-area fw-400 fs-22" style="color: none;">EV Eco System Reports</span>
+              <button class="accordion-button border-top border-1 border-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                style="background-color: #EBE3E0;">
+                <img
+                  src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-01.037f2f.svg"
+                  class="icon me-3" alt="" />
+                <span class="research-area research-tab-heading fw-400">EV Eco System Reports</span>
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#researchAccordion">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#researchAccordion">
               <div class="accordion-body">
                 Our comprehensive view of total battery demand and chemistry across all end-use markets.
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+
+          <div class="accordion-item" style="background-color: #EBE3E0; border: none;">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button border-top  border-1 border-dark collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-02.1f9e80.svg" class="icon me-3" alt="" />
-                <span class="research-area fw-400 fs-22">Solar Eco System Reports</span>
+              <button class="accordion-button border-top border-1 border-dark collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo" style="background-color: #EBE3E0;">
+                <img
+                  src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-02.1f9e80.svg"
+                  class="icon me-3" alt="" />
+                <span class="research-area research-tab-heading fw-400">Solar Eco System Reports</span>
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#researchAccordion">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#researchAccordion">
               <div class="accordion-body">
                 Professional analysis of the EV ecosystem, from sales data to battery insights and legislation impacts.
               </div>
             </div>
           </div>
 
-
-
-          <div class="accordion-item">
+          <div class="accordion-item" style="background-color: #EBE3E0; border: none;">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button border-top border-1 border-dark collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-02.1f9e80.svg" class="icon me-3" alt="" />
-                <span class="research-area fw-400 fs-22">Wind Eco System Reports</span>
+              <button class="accordion-button border-top border-1 border-dark collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree" style="background-color: #EBE3E0;">
+                <img
+                  src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-02.1f9e80.svg"
+                  class="icon me-3" alt="" />
+                <span class="research-area research-tab-heading fw-400">Wind Eco System Reports</span>
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#researchAccordion">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#researchAccordion">
               <div class="accordion-body">
                 Analysing the role of batteries in supporting future renewable deployment.
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+
+          <div class="accordion-item" style="background-color: #EBE3E0; border: none;">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button border-top border-1 border-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-04.8205fb.svg" class="icon me-3" alt="" />
-                <span class="research-area fw-400 fs-22">Hydrogen Eco System Reports</span>
+              <button class="accordion-button border-top border-1 border-dark collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour" style="background-color: #EBE3E0;">
+                <img
+                  src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-04.8205fb.svg"
+                  class="icon me-3" alt="" />
+                <span class="research-area research-tab-heading fw-400">Hydrogen Eco System Reports</span>
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#researchAccordion">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#researchAccordion">
               <div class="accordion-body">
                 Analysis beyond the battery covering motor types, power electronics and vehicle architectures.
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+
+          <div class="accordion-item" style="background-color: #EBE3E0; border: none;">
             <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button border-top border-1 border-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-05.1b030d.svg" class="icon me-3" alt="" />
-                <span class="research-area fw-400 fs-22">Bess Eco System Reports</span>
+              <button class="accordion-button border-top border-1 border-dark collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive" style="background-color: #EBE3E0;">
+                <img
+                  src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-05.1b030d.svg"
+                  class="icon me-3" alt="" />
+                <span class="research-area research-tab-heading fw-400">Bess Eco System Reports</span>
               </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#researchAccordion">
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#researchAccordion">
               <div class="accordion-body">
                 Analysing the underlying charging networks and systems that support EV growth.
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button border-top  border-bottom border-1 border-dark  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/our-research/shape-06.f89a01.svg" class="icon me-3" alt="" />
-                <span class="research-area fw-400 fs-22">Power Eco System Reports</span>
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix" data-bs-parent="#researchAccordion">
-              <div class="accordion-body">
-                Analysing battery recycling dynamics covering feedstock and capacity balance, and key drivers.
-              </div>
-            </div>
-          </div>
         </div>
-        <a href="<?= base_url('reports') ?>" class="btn btn-primary see-more btn-outline-dark  btn-lg mb-5 mt-4" style="background-color: #d0ddf7; border:1px solid black;!important">See Our Eco System Reports</a>
+
+        <a href="<?= base_url('reports') ?>" class="see-more btn btn-primary-outline py-2 mb-5 mt-4" style="background-color: #EBE3E0; border: 1px solidrgb(193, 193, 193) !important; padding-left: 1.3rem;
+    padding-right: 1.3rem;">See Our Eco System
+          Reports</a>
       </div>
-      <div class="col-md-7 d-none d-lg-block ">
-        <div class="illustration">
-          <img src="<?= base_url('assets/images/home.png
-          ') ?>" alt="Research Illustration" class="img-fluid" />
+
+      <div class="col-md-6 d-none d-lg-block position-relative">
+        <div class="illustration w-100 ">
+          <img src="<?= base_url('assets/images/home.png') ?>" alt="Research Illustration"
+            style="filter:invert(47%) sepia(27%) saturate(2298%) hue-rotate(206deg) brightness(92%) contrast(18%); padding-top: 4rem; min-width:calc(100% + 12.5rem); max-width: 100%; height:auto; left:-130px;"
+            class="img-fluid position-absolute top-0 " />
         </div>
       </div>
     </div>
   </div>
-
-
-
   <!-- componet for consultency -->
 
   <section class="position-relative bg-purple consultency">
     <div class="container-fluid">
       <div class="row no-gutters">
         <div class="col-md-6 d-flex flex-column justify-content-center text-white py-5">
-          <p class="text-uppercase h4 text-white mb-3 fw-bold fs-20 " style="color: #5866ff !important;">Custom Requirements</p>
-          <h2 class="text-sky-blue-5 mb-3 fw-bold fs-30" style="line-height: 140% !important; font-size:2.25rem !important; font-weight: 500 !important; width:70%">
+          <p class="text-uppercase h4 text-white mb-3 fw-bold fs-20 " style="color: #5866ff !important;">Custom
+            Requirements</p>
+          <h2 class="text-sky-blue-5 mb-3 fw-bold fs-30"
+            style="line-height: 140% !important; font-size:2.25rem !important; font-weight: 500 !important; width:70%">
             Research projects aligned with your specific objectives
           </h2>
           <p class="text-sky-blue-5 mb-4 fs-20" style="max-width: 500px;">
@@ -263,7 +319,9 @@
             <source media="(min-width: 640px)" srcset="
             https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701787900/assets/home/home-consultancy_e2n1v0_gxhm2i.webp
           " />
-            <img src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701787900/assets/home/home-consultancy-mobile_ampnjz_yaluzd.webp" class="img-fluid w-100  object-fit-cover" style="min-height: 100vh;" />
+            <img
+              src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701787900/assets/home/home-consultancy-mobile_ampnjz_yaluzd.webp"
+              class="img-fluid w-100  object-fit-cover" style="min-height: 100vh;" />
           </picture>
         </div>
       </div>
@@ -295,6 +353,403 @@
   </div>
   <!-- component -->
 
+
+  <!-- market research services -->
+  <style>
+    @media screen and (min-width: 768px) {
+      .market-research-services-hlp {
+        padding-top: 6.56rem !important;
+        padding-bottom: 4.56rem !important;
+      }
+
+      .market-research-services-hlp .market-reasearch-heading {
+        font-size: 2.25rem !important;
+        font-weight: 400 !important;
+        line-height: 3.15rem !important;
+      }
+
+      .text-paragraph-m {
+        margin-bottom: 2.5rem !important;
+      }
+
+      .text-pre-title-l {
+        font-size: 1.313rem;
+        font-weight: 600;
+        line-height: 1.838rem;
+      }
+    }
+
+    .market-research-services-hlp {
+      padding-top: 3.25rem;
+      padding-bottom: 1.87rem;
+    }
+
+    .market-research-services-hlp .market-reasearch-heading {
+      font-size: 1.75rem;
+      font-weight: 400;
+      line-height: 2.538rem;
+    }
+
+    .fw-800 {
+      font-weight: 800;
+    }
+
+    .text-paragraph-m {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+    }
+
+    .market__service-item {
+      transition: 0.4s all ease-in-out;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .market__service-item:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .right-arrow-link span {
+      transition: 0.3s all ease-in-out;
+    }
+
+    .right-arrow-link:hover span {
+      margin-right: 1rem !important;
+    }
+  </style>
+
+  <section class="market-research-services-hlp bg-primary-light-800">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class=" text-center mx-auto" style="max-width: 850px; width: 100%;">
+            <h2 class="fw-800 market-reasearch-heading">Market research services</h2>
+            <p class="fs-20 mb-4 text-center">We work with the world’s leading brands,
+              harnessing research to unlock new ideas, develop
+              future strategies and power business growth.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-gap-4">
+        <div class="col-md-4 market__service-item">
+          <div class="w-100 position-relative d-flex gap-3 justify-content-center align-items-start">
+            <i class="icon m02__icon ">
+              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
+                width="45" height="46" alt="">
+            </i>
+            <a href="https://eninrac.com/market-research-service/market-tracking-and-sizing" target="_blank"
+              class="h-100 text-darklight-900">
+              <h3 class="text-pre-title-l">Market Tracking & Sizing</h3>
+              <p class="text-paragraph-m ">Our Market Tracking And Sizing services help organisations to estimate the
+                ROI and extent of profit they potentially could earn from new business, product or service.</p>
+              <p class="p-0 d-flex align-items-center fw-800 fs-14"><span style="width:20px; height:20px;font-size:16px"
+                  class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                  <i class="icofont-long-arrow-right"></i></span> Find out more</p>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 market__service-item">
+          <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
+            <i class="icon m02__icon ">
+              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
+                width="45" height="46" alt="">
+            </i>
+            <a href="https://eninrac.com/market-research-service/market-analytics" target="_blank"
+              class=" h-100 text-darklight-900">
+              <h3 class="text-pre-title-l">Market Analytics
+              </h3>
+              <p class="text-paragraph-m ">Market Analytics Services offer businesses a comprehensive range of data and
+                data analysis solutions to assist them in making informed marketing decisions.</p>
+              <p class="p-0 d-flex align-items-center fw-800 fs-14"><span style="width:20px; height:20px;font-size:16px"
+                  class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                  <i class="icofont-long-arrow-right"></i></span> Find out more</p>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 market__service-item">
+          <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
+            <i class="icon m02__icon ">
+              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
+                width="45" height="46" alt="">
+            </i>
+            <a href="https://eninrac.com/market-research-service/competitor-analysis" class=" h-100 text-darklight-900">
+              <h3 class="text-pre-title-l">Competitor Analysis</h3>
+              <p class="text-paragraph-m ">Conducting a competitor analysis, also called competitive analysis, is a
+                crucial step for businesses to identify their competitors in the industry and analyze their marketing
+                strategies.</p>
+              <p class="p-0 d-flex align-items-center fw-800 fs-14"><span style="width:20px; height:20px;font-size:16px"
+                  class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                  <i class="icofont-long-arrow-right"></i></span> Find out more</p>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 market__service-item">
+          <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
+            <i class="icon m02__icon ">
+              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
+                width="45" height="46" alt="">
+            </i>
+            <a href="https://eninrac.com/market-research-service/research-on-demand-tracking" target="_blank"
+              class=" h-100 text-darklight-900">
+              <h3 class="text-pre-title-l">Research on Demand Tracking</h3>
+              <p class="text-paragraph-m ">Through our on demand research services we find filter and compiled research
+                as per need of your business to take informed and tactical decision in a timely manner.</p>
+              <p class="p-0 d-flex align-items-center fw-800 fs-14"><span style="width:20px; height:20px;font-size:16px"
+                  class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                  <i class="icofont-long-arrow-right"></i></span> Find out more</p>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 market__service-item">
+          <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
+            <i class="icon m02__icon ">
+              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
+                width="45" height="46" alt="">
+            </i>
+            <a href="https://eninrac.com/market-research-service/" target="_blank" class=" h-100 text-darklight-900">
+              <h3 class="text-pre-title-l">Market Research Service
+              </h3>
+              <p class="text-paragraph-m ">Market research service is instrumental to determine opportunity for
+                businesses. With Eninrac you get access to market information that is accurate & absolute in nature,</p>
+              <p class="p-0 d-flex align-items-center fw-800 fs-14"><span style="width:20px; height:20px;font-size:16px"
+                  class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                  <i class="icofont-long-arrow-right"></i></span> Find out more</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class=" p-3">
+            <a href="https://eninrac.com/service" target="_blank"
+              class="d-flex align-items-center right-arrow-link fs-18 fw-700 text-dark text-pre-title-l">
+              <span style="width:20px; height:20px;font-size:16px"
+                class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                <i class="icofont-long-arrow-right"></i></span> See
+              Full service list
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- market research services end -->
+
+  <!-- Sector we serve -->
+
+  <section class="market-research-services-hlp">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h2 class="text-sky-blue-5 mb-3 fw-bold fs-30"
+            style="line-height: 140% !important;font-size:2.25rem !important;width:70%">
+            Sector we serve</h2>
+          <p class="fs-20 mb-4">With over 30 years in the business of market research, we have extensive
+            experience and a depth of
+            knowledge across a range of sectors.</p>
+          <p class="fs-20 mb-4 ">We bring this to bear to design the very best approach to meet your
+            objectives.
+          </p>
+          <p class="p-0  fw-800 fs-14">
+            <a href="https://store.eninrac.com/browse-categories" class="d-flex align-items-center">
+
+              <span style="width:20px; height:20px;font-size:16px"
+                class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                <i class="icofont-long-arrow-right"></i></span> Find out more
+            </a>
+          </p>
+        </div>
+        <div class="col-md-7">
+          <div class="parent-service-list w-100 row" style="flex-grow: 0; column-count: 2; column-gap: 0;"
+            style="height:100%">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @media screen and (min-width: 1040px) {
+      .m06__link-wrap {
+        padding: 24px 0;
+        margin-bottom: -38px;
+      }
+
+      .servicelink-item {
+        padding: 14px 33px 13px 25px !important;
+        width: auto;
+        font-size: 1.25rem !important;
+      }
+
+      .m06__link-wrap {
+        padding: 24px 0 !important;
+        margin-bottom: -38px !important;
+      }
+    }
+
+    .servicelink-item {
+      padding: 0px 33px 0px 0px;
+      font-size: 14px;
+      transition: box-shadow .25s ease;
+    }
+
+    .servicelink-item:hover {
+      box-shadow: 0 4px 16px 8px rgba(209, 211, 212, .5);
+    }
+
+    @media screen and (min-width: 780px) {
+      .m06__link-wrap {
+        margin-bottom: -42px;
+      }
+    }
+
+    .servicelink-item {
+      max-width: 100%;
+    }
+
+    .m06__link-wrap {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      padding: 18px 0px;
+
+    }
+  </style>
+
+  <script>
+    const sectors = [
+      {
+        link: "sector/automotive-and-assembly",
+        image: "https://eninrac.com/assets/upload/assembly-bmw.jpg",
+        title: "Automotive & Assembly"
+      },
+      {
+        link: "sector/fmcg",
+        image: "https://eninrac.com/assets/upload/fmcg.jpeg",
+        title: "FMCG"
+      },
+      {
+        link: "sector/healthcare-systems-and-equipment",
+        image: "https://eninrac.com/assets/upload/healthcare.jpg",
+        title: "Healthcare Systems & Equipment"
+      },
+      {
+        link: "sector/renewable-energy-sources",
+        image: "https://eninrac.com/assets/upload/RE.jpg",
+        title: "Renewable Energy Sources"
+      },
+      {
+        link: "sector/logistics-and-warehousing",
+        image: "https://eninrac.com/assets/upload/1-283.jpg",
+        title: "Logistics & Warehousing"
+      },
+      {
+        link: "sector/metals-and-mining",
+        image: "https://eninrac.com/assets/upload/Mining.jpg",
+        title: "Metals & Mining"
+      },
+      {
+        link: "sector/oil-and-gas",
+        image: "https://eninrac.com/assets/upload/oil.png",
+        title: "Oil & Gas"
+      },
+      {
+        link: "sector/pharmaceutical",
+        image: "https://eninrac.com/assets/upload/Pharma.jpg",
+        title: "Pharmaceutical"
+      },
+      {
+        link: "sector/power-and-utilities",
+        image: "https://eninrac.com/assets/upload/power.jpg",
+        title: "Power & Utilities"
+      },
+      {
+        link: "sector/public-sector",
+        image: "https://eninrac.com/assets/upload/Public_Sector.jpg",
+        title: "Public Sector"
+      },
+      {
+        link: "sector/chemical-and-petrochemicals",
+        image: "https://eninrac.com/assets/upload/Chemical-petrochemical.jpg",
+        title: "Chemical & Petrochemicals"
+      },
+      {
+        link: "sector/capital-projects-and-infrastructure",
+        image: "https://eninrac.com/assets/upload/Capital.jpg",
+        title: "Capital Projects & Infrastructure"
+      }
+    ];
+
+
+    const parentServiceList = document.querySelector(".parent-service-list")
+
+
+
+    sectors.forEach(sect => {
+      let div = document.createElement('div');
+      div.setAttribute('class', ' d-flex m06__link-wrap col-md-6');
+      div.innerHTML = `
+            <a href="https://store.eninrac.com/${sect.link}" class="servicelink-item service_list_item d-flex align-items-center gap-2">
+              <div class="service_list_item-icon"></div>
+              <span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;" class="service_list_item-span text-dark fw-700" style="font-size:1.25rem;">${sect.title}</span>
+              <span style="width:20px;height:20px;"
+                class="d-flex bg-primary-500 text-white rounded-circle">
+                <i class="icofont-long-arrow-right mx-0"></i></span>
+            </a>
+      `
+      parentServiceList.appendChild(div)
+    })
+
+
+  </script>
+
+  <!-- Sector we serve end -->
+
+  <!-- Case studies -->
+
+  <section class="d-md-flex eco-case-study-section">
+    <div class="eco__casestudy--left">
+      <div class="container">
+        <div class="intro">
+          <h2>Our mission is to raise the impact of research – and we're delivering</h2>
+        </div>
+        <div class="result--view">
+          <div class="d-flex position-absolute top-0 left-0 w-100 h-100">
+            <div class="">
+              <img width="216" height="216" src="https://kadence.com/wp-content/uploads/2020/07/mrs-oppies-432x410.jpg"
+                class=" left--result-image" alt="">
+            </div>
+            <div class="">
+              <h3 class="eco__result-award">Market Research Supplier of the Year</h3>
+              <p class="eco__result-achievment">Winner</p>
+              <cite class="eco__result-cite">— Marketing Research & Insight Excellence Awards – 2019</cite>
+            </div>
+          </div>
+        </div>
+        <div class="controls"></div>
+      </div>
+    </div>
+    <div class="eco__casest-right">
+      <div class="container"></div>
+    </div>
+  </section>
+
+  <!-- case studies end -->
+
+
+
   <section class="relative px-0  " style="background-color:#CAC0FF;  padding-bottom: 2rem;">
     <div class="container-xxl  max-w-content-container d-md-flex align-items-lg-center pb-5 pb-md-5 pt-5 pt-md-5 mx-1">
       <div class="col-md-6 pe-md-5">
@@ -319,7 +774,9 @@
           <source media="(min-width: 640px)" srcset="
                 https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701813186/assets/home/home-events_cfh9zf.webp
               " />
-          <img class="img-fluid object-cover mx-auto mx-md-0 w-100 max-w-md h-auto" src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701812086/assets/home/home-events-mobile__qffpzj.webp" alt="" />
+          <img class="img-fluid object-cover mx-auto mx-md-0 w-100 max-w-md h-auto"
+            src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701812086/assets/home/home-events-mobile__qffpzj.webp"
+            alt="" />
         </picture>
       </div>
     </div>
@@ -327,16 +784,20 @@
 
   <!-- contact us -->
 
-  <section class="position-relative" style="min-height: 400px; margin:0 ; background-image: linear-gradient(#cac0ff,#041e42);">
-    <div class="wrapper contact" style="margin:auto; min-width:95%; position:absolute; z-index: 2; top:0; bottom:0 ; left:15px; right:15px ">
+  <section class="position-relative"
+    style="min-height: 400px; margin:0 ; background-image: linear-gradient(#cac0ff,#041e42);">
+    <div class="wrapper contact"
+      style="margin:auto; min-width:95%; position:absolute; z-index: 2; top:0; bottom:0 ; left:15px; right:15px ">
       <div class="position-relative py-5 px-3 bg-lilac-medium md:py-7 max-w-content-container mx-auto overflow-hidden">
         <div class="d-flex flex-column align-items-center py-4">
           <h3 class="text-h3  fs-24 text-center md:text-5xl mb-3 mb-md-4 display-2">
             Contact us
           </h3>
-          <span class="text-sm text-center mb-4 mb-md-5 md:max-w-3xl h3 fs-20" style="line-height: 140%;">Register your interest and we’ll contact you shortly to <br> provide
+          <span class="text-sm text-center mb-4 mb-md-5 md:max-w-3xl h3 fs-20" style="line-height: 140%;">Register your
+            interest and we’ll contact you shortly to <br> provide
             sample materials and arrange a demo.</span>
-          <a class="btn btn-primary px-5 py-2 text-sm md:py-0 md:text-base font-medium rounded-md btn-lg fw-bold" href="<?= base_url('contact_us') ?>">Get in touch</a>
+          <a class="btn btn-primary px-5 py-2 text-sm md:py-0 md:text-base font-medium rounded-md btn-lg fw-bold"
+            href="<?= base_url('contact_us') ?>">Get in touch</a>
         </div>
       </div>
     </div>
@@ -383,10 +844,12 @@
                 <p style="font-size: .8rem;">By submitting this form, you agree to Eninrac&#39;s privacy policy.</p>
                 <div class="social-icons mt-4">
                   <a href="https://www.linkedin.com/in/eninrac-consulting-88641719b/" target="_blank" rel="noreferrer">
-                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-linkedin.5fd894.svg" alt="LinkedIn">
+                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-linkedin.5fd894.svg"
+                      alt="LinkedIn">
                   </a>
                   <a href="https://x.com/i/flow/login?redirect_after_login=%2Feninrac" target="_blank" rel="noreferrer">
-                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-x.290b8c.svg" alt="Twitter">
+                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-x.290b8c.svg"
+                      alt="Twitter">
                   </a>
                 </div>
 
