@@ -795,6 +795,34 @@ Footer site map
       </div>
     </div>
     <div class="container">
+      <div class="d-md-flex">
+        <div class="eco-footer__buttons">
+          <button class="eco-footer__button-item is-active ">Eninrac Consulting</button>
+          <button class="eco-footer__button-item ">Omnicore Plus</button>
+          <button class="eco-footer__button-item ">Vantedge</button>
+          <button class="eco-footer__button-item ">Warehouses In India</button>
+          <button class="eco-footer__button-item ">Horizon</button>
+          <button class="eco-footer__button-item ">Vision Board</button>
+        </div>
+        <div class="eco-footer__information-details">
+          <div class="eco__posts">
+            <div class="small-article-eco-post"
+              style="background:lightblue; color:#fff; border-radius:2px; margin-top:1rem; overflow:hidden;">
+              <a href="#" class="d-flex" style="color: white;">
+                <div class="position-relative" style="width: 88px; height: 70px;">
+                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
+                </div>
+                <h3 class=" small-article-heading fs-14 fw-500 my-2"
+                  style="width:calc(100% - 88px); flex-grow: 1; padding: 4px 25px 6px 14px;">
+                  Eninrac Office Noida
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </section>
