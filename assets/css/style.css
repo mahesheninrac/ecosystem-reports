@@ -365,13 +365,19 @@ a {
 
 .eco-case-study-section {
   max-width: 100vw;
-  width: 100vw;
   position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
+}
+
+@media (min-width: 1040px) {
+  .single-case-study-item__content {
+    margin: 48px 0 65px !important;
+  }
+}
+
+.single-case-study-item__content {
+  margin: 32px 0 58px;
 }
 
 
@@ -397,6 +403,27 @@ a {
   .eco__casest-right {
     width: 50% !important;
   }
+
+  .eco__casestudy--left .intro {
+    margin: 23px 40px !important;
+  }
+}
+
+.h2 {
+  font-size: 1.125rem !important;
+}
+
+.eco__casestudy--left .intro {
+  position: relative;
+  margin: 23px 0;
+}
+
+.h2-casestudy {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  line-height: 1.24;
+  word-wrap: break-word;
 }
 
 @media screen and (min-width: 1040px) {
@@ -405,8 +432,16 @@ a {
     height: 216px !important;
   }
 
+  .h2 {
+    font-size: 2.5rem !important;
+  }
+
   .h6 {
     font-size: 1.125rem !important;
+  }
+
+  .h3 {
+    font-size: 2.25rem !important;
   }
 
   .eco__result-cite {
@@ -414,6 +449,78 @@ a {
     line-height: 1.5625rem !important;
     margin-top: 1.65em !important;
   }
+
+  .eco__casestudy--left .intro {
+    margin: 56px 40px !important;
+  }
+}
+
+.h3 {
+  font-size: 1rem;
+  position: relative;
+  display: block;
+  font-weight: 700;
+  line-height: 1.24;
+  word-wrap: break-word;
+}
+
+
+.form-background-wrapper {
+  background-position: right bottom;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-image: url(https://einfews.energyinfra.market/assets/om-upload/form-background-graphic.png);
+  background-color: var(--primary-100);
+  border-top: 10px white solid;
+}
+
+.enquiry-btn-item {
+  all: unset;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: var(--darklight-900);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 0 26px;
+  font-weight: bold;
+  height: 40px;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.enquiry-btn-item:hover {
+  background-color: var(--darklight-700);
+}
+
+@media (min-width: 1040px) {
+  .eco-block-group.has-background {
+    padding: 3.6em 0 4em !important;
+  }
+}
+
+.eco-block-group.has-background {
+  padding: 3.5em 0 4em;
+}
+
+
+@media (min-width: 1040px) {
+  .eco__result-content {
+    margin: 2em 0 2em 1.8em !important;
+  }
+}
+
+.eco__result-content {
+  margin: .65em 0 .65em .7em;
+  padding: 0;
 }
 
 .eco__result-cite {
@@ -447,6 +554,13 @@ a {
 
 
 /* eco case study section end */
+
+/* Footer contact site details */
+@media (min-width: 1040px) {
+  .contact-site-details {
+    padding: 96px 0 102px !important;
+  }
+}
 
 .hero .card-body img {
   opacity: 1;

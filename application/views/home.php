@@ -5,29 +5,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ecosystem</title>
-
-
   <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
 </head>
 
 <body>
   <!-- navbar section  -->
+  <!-- Navbar Section -->
   <nav class="navbar navbar-expand-md bg-white py-4">
     <div class="container-fluid">
-      <a class="navbar-brand " href="<?= base_url('') ?>">
-
-
+      <a class="navbar-brand" href="<?= base_url('') ?>">
         <img src="<?= base_url('assets/images/final-logo-ecosystem.png') ?>" class="w-100 h-80" alt="home-page-banner">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="icofont-navigation-menu fs-30"></i></span>
+        <span class="navbar-toggler-icon">
+          <i class="icofont-navigation-menu fs-30"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center" style="gap: 1.5rem; ">
+        <ul class="navbar-nav ms-auto align-items-center" style="gap: 1.5rem;">
           <li class="nav-item">
-            <a class="nav-link text-dark fw-normal" href="<?= base_url('reports') ?>"> Reports</a>
+            <a class="nav-link text-dark fw-normal" href="<?= base_url('reports') ?>">Reports</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-normal" href="<?= base_url('custom_page') ?>">Custom Requirements</a>
@@ -38,13 +37,13 @@
           <li class="nav-item">
             <a class="nav-link fw-normal" href="<?= base_url('contact_us') ?>">Contact us</a>
           </li>
-          <li class="nav-item">
-            <i class="icofont-navigation-menu fs-22" style=" margin-right: 5px"></i>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Bootstrap JS (Ensure this is included for toggle functionality) -->
+
 
   <!-- Hero Section -->
   <div class="overflow-hidden hero  container-fluid" style="background-color: #d0ddf7;">
@@ -328,10 +327,6 @@
     </div>
   </section>
 
-
-
-
-
   <!-- components for icon  -->
 
   <div class="container-fluid  d-flex flex-wrap justify-content-around text-center landing-service-ribbon">
@@ -606,13 +601,15 @@
       transition: box-shadow .25s ease;
     }
 
-    .servicelink-item:hover {
-      box-shadow: 0 4px 16px 8px rgba(209, 211, 212, .5);
-    }
+
 
     @media screen and (min-width: 780px) {
       .m06__link-wrap {
         margin-bottom: -42px;
+      }
+
+      .servicelink-item:hover {
+        box-shadow: 0 4px 16px 8px rgba(209, 211, 212, .5);
       }
     }
 
@@ -723,16 +720,16 @@
     <div class="eco__casestudy--left">
       <div class="container">
         <div class="intro">
-          <h2>Our mission is to raise the impact of research – and we're delivering</h2>
+          <h2 class="h2 h2-casestudy">Our mission is to raise the impact of research – and we're delivering</h2>
         </div>
         <div class="result--view">
-          <div class="d-flex position-absolute top-0 left-0 w-100 h-100">
+          <div class="d-flex w-100 h-100">
             <div class="">
               <img width="216" height="216" src="https://kadence.com/wp-content/uploads/2020/07/mrs-oppies-432x410.jpg"
                 class=" left--result-image" alt="">
             </div>
-            <div class="">
-              <h3 class="eco__result-award">Market Research Supplier of the Year</h3>
+            <div class="eco__result-content">
+              <h3 class="eco__result-award h6 fw-700">Market Research Supplier of the Year</h3>
               <p class="eco__result-achievment">Winner</p>
               <cite class="eco__result-cite">— Marketing Research & Insight Excellence Awards – 2019</cite>
             </div>
@@ -742,11 +739,100 @@
       </div>
     </div>
     <div class="eco__casest-right">
-      <div class="container"></div>
+      <img style="width: 100%;"
+        src="https://kadence.com/wp-content/uploads/2020/07/chuttersnap-mf-o1E7omzk-unsplash-1440x432.jpg" alt="">
+      <div class="container">
+        <div class="single-case-study-item__content px-md-4">
+          <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+            src="https://kadence.com/wp-content/uploads/2020/07/1200px-Samsung_wordmark.svg-288x44.png" alt="">
+          <a href="">
+            <h2 class="h3 text-dark">
+              Demonstrating the positive impact of CSR programmes on brand perceptions across Asia for Samsung
+            </h2>
+          </a>
+          <p class="fs-18 mb-4">Neuroscience helped Bloomberg show that its advertising platform is a cut above the rest
+            and delivers
+            better outcomes for advertisers.</p>
+          <div class="btn-wrap-case-study">
+            <p class="p-0  fw-800 fs-14">
+              <a href="https://store.eninrac.com/browse-categories" class="d-flex align-items-center">
+
+                <span style="width:20px; height:20px;font-size:16px"
+                  class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                  <i class="icofont-long-arrow-right"></i></span> Find out more
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
   <!-- case studies end -->
+
+  <!-- ///////////////////////////////////////////////////////////////////////
+Testimonials 
+ ///////////////////////////////////////////////////////////////////////////-->
+
+  <section></section>
+  <!-- ///////////////////////////////////////////////////////////////////////
+Testimonials end
+ ///////////////////////////////////////////////////////////////////////////-->
+
+  <!-- ///////////////////////////////////////////////////////////////////////
+Footer site map 
+ ///////////////////////////////////////////////////////////////////////////-->
+
+  <section class="footer-site-map contact-site-details">
+    <div class="container" style="margin-bottom: 55px;">
+      <div class="row">
+        <div class="col-md-7">
+          <h2 class="h3">The global boutique for data and insight</h2>
+          <p>Our global footprint makes us the go-to partner for international market research. We offer all qualitative
+            and quantitative methodologies across our office network and beyond.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+    </div>
+  </section>
+  <!-- ///////////////////////////////////////////////////////////////////////
+Footer site map end
+ ///////////////////////////////////////////////////////////////////////////-->
+
+
+  <!-- contact Category Section -->
+  <section class="form-background-wrapper eco-block-group has-background">
+    <div class="container">
+      <h3 class="h3" style="margin-bottom: 40px;">Please select the type of enquiry</h3>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row row-gap-3">
+            <div class="col-md-6"><button class="w-75 enquiry-btn-item">Request a Call</button></div>
+            <div class="col-md-6">
+              <div class=""><button class="w-75 enquiry-btn-item">Request a Quote</button></div>
+            </div>
+            <div class="col-md-6">
+              <div class=""><button class="w-75 enquiry-btn-item"> Employment</button></div>
+            </div>
+            <div class="col-md-6">
+              <div class=""><button class="w-75 enquiry-btn-item">Marketing</button></div>
+            </div>
+            <div class="col-md-6">
+              <div class=""><button class="w-75 enquiry-btn-item">others</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- contact Category Section End-->
+
 
 
 
@@ -804,12 +890,6 @@
   </section>
 
   <!-- footer -->
-
-
-  <!--  -->
-
-
-
   <footer class="footer text-center text-md-start z-1">
     <div class="container-fluid">
       <div class="row" style="padding:2rem">
@@ -871,11 +951,20 @@
   </footer>
 
   <!--  -->
-
-
-
-
+  <script src="<?= base_url() ?>assets/js/jquery.min.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/popper.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/moment.min.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/apexcharts.min.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/highcharts.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/bootstrap.min.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/owl.carousel.min.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/perfect-scrollbar.js"></script>
+  <script src="<?= base_url() ?>assets/plugins/daterangepicker.js"></script>
+  <script src="<?= base_url() ?>assets/js/app.js"></script>
+  <script src="<?= base_url() ?>assets/js/script.js"></script>
   <script src="<?= base_url('assets/js/footer.js') ?>"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
