@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
 
   <style>
-    
     .report-header {
       position: relative;
       background-color: var(--primary-300);
@@ -115,6 +114,10 @@
       width: 25px;
     }
 
+    .info-block {
+      transition: 0.4s all ease-in-out;
+    }
+
     /* changes */
 
     .info-block:hover {
@@ -171,11 +174,15 @@
     }
 
     .highlight {
-      background-image: linear-gradient(135deg, #f1f2fb, #82a5e9);
-      box-shadow: 10px 5px 5px rgba(90, 70, 254, .5);
+
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       border-radius: 10px;
       padding: 1rem;
 
+    }
+
+    .info-block .h5 {
+      font-weight: 700;
     }
   </style>
 
@@ -191,7 +198,8 @@
 
         <img src="<?= base_url('assets/images/final-logo-ecosystem.png') ?>" class="w-100 h-80" alt="home-page-banner">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="icofont-navigation-menu fs-30"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -221,7 +229,9 @@
 
   <!-- header -->
   <header class="report-header report-header-lg text-center px-2 px-lg-5">
-    <img src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1702262499/assets/magazine/hn4cpe8bbs7ponn1bch4.svg" alt="Background Image">
+    <img
+      src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1702262499/assets/magazine/hn4cpe8bbs7ponn1bch4.svg"
+      alt="Background Image">
 
 
     <div class="relative">
@@ -240,20 +250,20 @@
     <div class="ribbon-content">
       <ul class="vb-res list-style-none d-flex p-0 width-500 justify-content-around m-auto">
 
-        <li id="btn-ev" class="tab">
+        <li id="btn-ev" style="padding-top:1rem ;" class="tab">
           <div class="text-center ">
             <img src="<?= base_url('assets/images/solar-line.svg') ?>" class="product-ribbon-svg">
             <p class="text-center  c-light-gray mt-2">EV</p>
           </div>
         </li>
-        <li id="btn-solar" class="highlight tab">
+        <li id="btn-solar" style="padding-top:1rem ;" class="highlight tab">
           <div class="text-center ">
             <img src="<?= base_url('assets/images/solar-line.svg') ?>" class="product-ribbon-svg">
             <p class="text-center  c-light-gray mt-2">Solar</p>
           </div>
         </li>
 
-        <li id="btn-wind" class="tab">
+        <li id="btn-wind" style="padding-top:1rem ;" class="tab">
           <div class="text-center">
             <img src="<?= base_url('assets/images/oa-line.svg') ?>" class="product-ribbon-svg">
             <p class="text-center  c-light-gray mt-2">Wind</p>
@@ -262,21 +272,21 @@
         </li>
 
 
-        <li id="btn-hydro" class="tab">
+        <li id="btn-hydro" style="padding-top:1rem ;" class="tab">
           <div class="text-center ">
             <img src="<?= base_url('assets/images/solar-line.svg') ?>" class="product-ribbon-svg">
             <p class="text-center  c-light-gray mt-2">Hydrogen</p>
           </div>
         </li>
 
-        <li id="btn-bess" class="tab">
+        <li id="btn-bess" style="padding-top:1rem ;" class="tab">
           <div class="text-center">
             <img src="<?= base_url('assets/images/ev-line.svg') ?>" class="product-ribbon-svg">
             <p class="text-center  c-light-gray mt-2">BESS</p>
           </div>
         </li>
 
-        <li id="btn-power" class="tab">
+        <li id="btn-power" style="padding-top:1rem ;" class="tab">
           <div class="text-center">
             <img src="<?= base_url('assets/images/ev-line.svg') ?>" class="product-ribbon-svg">
             <p class="text-center  c-light-gray mt-2">Power</p>
@@ -292,8 +302,10 @@
   <div class="main d-flex flex gap-2  w-blue" style="padding-top:1rem;  background-color: #f1f2fb;">
     <div class=" py-1" style="width: 30%; position: sticky; top: 0px; min-width: 300px; min-height: 100vh">
       <!-- justify-content-between -->
-      <ul class=" fw-normal text-start d-flex flex-column gap-4 report-types justify-content-between" style="position: sticky; top: 0px; min-width: 300px; min-height: 100vh;">
-        <li class="border-top border-bottom  d-flex  justify-content-between py-2 side-list" target="first" id="market-sizing">
+      <ul class=" fw-normal text-start d-flex flex-column gap-4 report-types justify-content-between"
+        style="position: sticky; top: 0px; min-width: 300px; min-height: 100vh;">
+        <li class="border-top border-bottom  d-flex  justify-content-between py-2 side-list" target="first"
+          id="market-sizing">
           <p class=" v-list">Market Sizing</p>
           <div class="arrow align-items-center" id="first"><i class="icofont-arrow-right fs-40"></i></div>
 
@@ -329,10 +341,9 @@
             <div class="contentsection market-sizing">
               <div class="py-4 ">
                 <h1 class="h5 fw-bold text-uppercase  ">Market Sizing</h1>
-
               </div>
 
-              <div class="info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+              <div class="info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                 <img src="https://placehold.co/25" class="">
 
                 <div class="text-content d-flex flex-column">
@@ -343,7 +354,7 @@
                 <a href="<?= base_url("product_page") ?>">Learn More <i class="icofont-long-arrow-right "></i></a>
               </div>
 
-              <div class=" info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+              <div class=" info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                 <img src="https://placehold.co/25" class="">
 
                 <div class="text-content d-flex flex-column">
@@ -388,11 +399,9 @@
               <div class="focus-reports">
                 <div class=" py-4 ">
                   <h1 class="h5 fw-bold text-uppercase  ">Focus Reports</h1>
-
                 </div>
-                <div class=" info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+                <div class=" info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                   <img src="https://placehold.co/25" class="">
-
                   <div class="text-content d-flex flex-column">
                     <p class="h5
                 ">EV & Battery Quarterly Outlook</p>
@@ -400,7 +409,7 @@
                   </div>
                   <a href="">Learn More <i class="icofont-long-arrow-right "></i></a>
                 </div>
-                <div class=" info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+                <div class=" info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                   <img src="https://placehold.co/25" class="">
 
                   <div class="text-content d-flex flex-column">
@@ -429,41 +438,34 @@
                   </div>
                   <a href="">Learn More <i class="icofont-long-arrow-right "></i></a>
                 </div>
-                <div class="info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+                <div class="info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                   <img src="https://placehold.co/25" class="">
-
                   <div class="text-content d-flex flex-column">
-                    <p class="h5
-                ">EV & Battery Quarterly Outlook</p>
+                    <p class="h5">EV & Battery Quarterly Outlook</p>
                     <p class="">Quarterly report • PDF & Excel • Includes access to our analysts</p>
                   </div>
                   <a href="<?= base_url("product_page") ?>">Learn More <i class="icofont-long-arrow-right "></i></a>
                 </div>
-
               </div>
             </div>
             <div class="contentsection databases">
               <div class="databases">
                 <div class=" py-4 ">
-                  <h1 class="h5 fw-bold text-uppercase  ">Databases</h1>
-
+                  <h1 class="h5 fw-bold text-uppercase">Databases</h1>
                 </div>
-                <div class="info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+                <div class="info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                   <img src="https://placehold.co/25" class="">
-
                   <div class="text-content d-flex flex-column">
-                    <p class="h5
-                ">EV & Battery Quarterly Outlook</p>
+                    <p class="h5">EV & Battery Quarterly Outlook</p>
                     <p class="">Quarterly report • PDF & Excel • Includes access to our analysts</p>
                   </div>
                   <a href="">Learn More <i class="icofont-long-arrow-right "></i></a>
                 </div>
-                <div class=" info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+                <div class=" info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                   <img src="https://placehold.co/25" class="">
 
                   <div class="text-content d-flex flex-column">
-                    <p class="h5
-                ">EV & Battery Quarterly Outlook</p>
+                    <p class="h5">EV & Battery Quarterly Outlook</p>
                     <p class="">Quarterly report • PDF & Excel • Includes access to our analysts</p>
                   </div>
                   <a href="">Learn More <i class="icofont-long-arrow-right "></i></a>
@@ -477,7 +479,7 @@
                   <h1 class="h5 fw-bold text-uppercase  ">Survey</h1>
 
                 </div>
-                <div class="info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+                <div class="info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                   <img src="https://placehold.co/25" class="">
 
                   <div class="text-content d-flex flex-column">
@@ -487,9 +489,8 @@
                   </div>
                   <a href="">Learn More <i class="icofont-long-arrow-right "></i></a>
                 </div>
-                <div class="info-block d-flex flex py-1 gap-4 mx-4  align-items-start">
+                <div class="info-block d-flex flex py-3 px-2 gap-4 mx-4  align-items-start">
                   <img src="https://placehold.co/25" class="">
-
                   <div class="text-content d-flex flex-column">
                     <p class="h5
                 ">EV & Battery Quarterly Outlook</p>
@@ -497,35 +498,16 @@
                   </div>
                   <a href="">Learn More <i class="icofont-long-arrow-right "></i></a>
                 </div>
-
               </div>
-
             </div>
           </div>
           <div id="content-ev" class="content-section">
-            <div class="market-sizing">
-
-            </div>
-
-            <div class="future-outtlook">
-
-            </div>
-
-            <div class="focus-reports">
-
-            </div>
-
-            <div class="thematic-reports">
-
-            </div>
-
-            <div class="databases">
-
-            </div>
-
-            <div class="surveys">
-
-            </div>
+            <div class="market-sizing"></div>
+            <div class="future-outtlook"></div>
+            <div class="focus-reports"></div>
+            <div class="thematic-reports"></div>
+            <div class="databases"></div>
+            <div class="surveys"></div>
           </div>
           <div id="content-wind" class="content-section">
 
@@ -674,10 +656,12 @@
                 <p style="font-size: .8rem;">By submitting this form, you agree to Rho Motion’s privacy policy.</p>
                 <div class="social-icons mt-4">
                   <a href="https://www.linkedin.com/in/eninrac-consulting-88641719b/" target="_blank" rel="noreferrer">
-                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-linkedin.5fd894.svg" alt="LinkedIn">
+                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-linkedin.5fd894.svg"
+                      alt="LinkedIn">
                   </a>
                   <a href="https://x.com/i/flow/login?redirect_after_login=%2Feninrac" target="_blank" rel="noreferrer">
-                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-x.290b8c.svg" alt="Twitter">
+                    <img src="https://rhomotion.com/app/themes/rhomotion-theme/public/images/ico-x.290b8c.svg"
+                      alt="Twitter">
                   </a>
                 </div>
 
@@ -713,32 +697,24 @@
 
     function topCheck(element) {
       let currentPosition = getScreenPosition(element);
-      console.log(currentPosition.screenY);
 
       if (currentPosition.screenY > -180 && currentPosition.screenY < 35) {
-
         return true;
       }
       return false;
-
-
     }
 
     function showContent(contentId) {
-
-
       var contents = document.querySelectorAll('.content-section');
-      contents.forEach(function(content) {
+      contents.forEach(function (content) {
         content.classList.remove('active');
       });
-
-
       document.getElementById(contentId).classList.add('active');
     }
 
     function highlight(element) {
       var tabs = document.querySelectorAll('.tab');
-      tabs.forEach(function(tab) {
+      tabs.forEach(function (tab) {
         tab.classList.remove('highlight');
       });
       element.classList.add('highlight');
@@ -746,12 +722,9 @@
 
 
 
-    window.addEventListener('scroll', function(e) {
+    window.addEventListener('scroll', function (e) {
       if (topCheck(document.querySelectorAll('.contentsection')[0])) {
         showArrow("first");
-
-
-
       }
       if (topCheck(document.querySelectorAll('.contentsection')[1])) {
         showArrow("second")
@@ -783,31 +756,32 @@
       // Hide all content sections
       var contents = document.querySelectorAll('.arrow');
 
-      contents.forEach(function(content) {
+      contents.forEach(function (content) {
 
         content.classList.remove('active');
       });
       let ele = document.getElementById(id);
-
+      console.log(ele.nextElementSibling);
+      //  .classList.add("text-primary-700")
       ele.classList.add('active');
     }
 
 
 
-    document.getElementById('btn-ev').addEventListener('click', function() {
+    document.getElementById('btn-ev').addEventListener('click', function () {
 
       highlight(this);
       showContent('content-ev');
 
     });
 
-    document.getElementById('btn-solar').addEventListener('click', function() {
+    document.getElementById('btn-solar').addEventListener('click', function () {
       highlight(this);
       showContent('content-solar');
 
     });
 
-    document.getElementById('btn-wind').addEventListener('click', function() {
+    document.getElementById('btn-wind').addEventListener('click', function () {
       highlight(this);
       showContent('content-wind');
 
@@ -815,18 +789,18 @@
 
 
 
-    document.getElementById('btn-hydro').addEventListener('click', function() {
+    document.getElementById('btn-hydro').addEventListener('click', function () {
       highlight(this);
       showContent('content-hydro');
 
     });
 
-    document.getElementById('btn-bess').addEventListener('click', function() {
+    document.getElementById('btn-bess').addEventListener('click', function () {
       highlight(this);
       showContent('content-bess');
 
     });
-    document.getElementById('btn-power').addEventListener('click', function() {
+    document.getElementById('btn-power').addEventListener('click', function () {
       highlight(this);
       showContent('content-power');
 

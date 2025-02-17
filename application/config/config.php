@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 // officce
-// $config['base_url'] = 'http://192.168.1.155/ci';
+$config['base_url'] = 'http://192.168.1.6/eco-system-report';
 $config['base_url'] = 'http://localhost/eco-system-report/';
 
 // home 
