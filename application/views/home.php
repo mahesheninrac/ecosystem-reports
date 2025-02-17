@@ -86,6 +86,7 @@
               <div class="card-body position-relative py-4">
                 <img src="<?= base_url() ?>assets/images/CUSTOM REQUIREMENTS.jpg" class="d-none d-lg-block" alt="" />
                 <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
+
                   CUSTOM REQUIREMENTS
 
                   <i class="icofont-external-link"></i>
@@ -288,65 +289,7 @@
       </div>
     </div>
   </div>
-  <!-- componet for consultency -->
 
-  <section class="position-relative bg-purple consultency">
-    <div class="container-fluid">
-      <div class="row no-gutters">
-        <div class="col-md-6 d-flex flex-column justify-content-center text-white py-5">
-          <p class="text-uppercase h4 text-white mb-3 fw-bold fs-20 " style="color: #5866ff !important;">Custom
-            Requirements</p>
-          <h2 class="text-sky-blue-5 mb-3 fw-bold fs-30"
-            style="line-height: 140% !important; font-size:2.25rem !important; font-weight: 500 !important; width:70%">
-            Research projects aligned with your specific objectives
-          </h2>
-          <p class="text-sky-blue-5 mb-4 fs-20" style="max-width: 500px;">
-            Bespoke consultancy and advisory services based on your defined
-            criteria across the EV and battery, charging and battery recycling
-            supply chains.
-          </p>
-          <a href="<?= base_url('custom_page') ?>">
-            <button type="button" class="btn btn-primary fw-bold px-3 py-2 rounded-md">
-              Learn More
-            </button>
-          </a>
-        </div>
-
-        <!-- section for picture -->
-        <div class="col-md-6 p-0">
-          <picture class="w-100 h-100">
-            <source media="(min-width: 640px)" srcset="
-            https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701787900/assets/home/home-consultancy_e2n1v0_gxhm2i.webp
-          " />
-            <img
-              src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701787900/assets/home/home-consultancy-mobile_ampnjz_yaluzd.webp"
-              class="img-fluid w-100  object-fit-cover" style="min-height: 100vh;" />
-          </picture>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- components for icon  -->
-
-  <div class="container-fluid  d-flex flex-wrap justify-content-around text-center landing-service-ribbon">
-    <!-- one -->
-    <div class="text-white p-3">
-      <img src="https://placehold.co/120x120" alt="" class="rounded-circle" />
-      <p class="text-white py-2">Market studies</p>
-    </div>
-    <!-- 2 -->
-    <div class="text-white p-3">
-      <img src="https://placehold.co/120x120" alt="" class="rounded-circle" />
-      <p class="text-white  py-2">Market research &<br>Market validation</p>
-    </div>
-    <!-- 3 -->
-    <div class="text-white p-3">
-      <img src="https://placehold.co/120x120" alt="" class="rounded-circle" />
-      <p class="text-white py-2">Due diligence</p>
-    </div>
-  </div>
-  <!-- component -->
 
 
   <!-- market research services -->
@@ -722,20 +665,33 @@
         <div class="intro">
           <h2 class="h2 h2-casestudy">Our mission is to raise the impact of research – and we're delivering</h2>
         </div>
-        <div class="result--view">
-          <div class="d-flex w-100 h-100">
-            <div class="">
-              <img width="216" height="216" src="https://kadence.com/wp-content/uploads/2020/07/mrs-oppies-432x410.jpg"
-                class=" left--result-image" alt="">
+        <div class="carousel-card owl-carousel owl-theme owl-loaded owl-drag">
+          <div class="owl-stage-outer">
+            <div class="result--view  owl-stage">
+              <div class="d-flex w-100 h-100 owl-item Active">
+                <div class="">
+                  <img width="216" height="216"
+                    src="https://kadence.com/wp-content/uploads/2020/07/mrs-oppies-432x410.jpg"
+                    class=" left--result-image" alt="">
+                </div>
+                <div class="eco__result-content">
+                  <h3 class="eco__result-award h6 fw-700">Market Research Supplier of the Year</h3>
+                  <p class="eco__result-achievment">Winner</p>
+                  <cite class="eco__result-cite">— Marketing Research & Insight Excellence Awards – 2019</cite>
+                </div>
+              </div>
             </div>
-            <div class="eco__result-content">
-              <h3 class="eco__result-award h6 fw-700">Market Research Supplier of the Year</h3>
-              <p class="eco__result-achievment">Winner</p>
-              <cite class="eco__result-cite">— Marketing Research & Insight Excellence Awards – 2019</cite>
+          </div>
+
+          <div class="controls">
+            <div class="owl-dots">
+              <button role="button" class="owl-dot active"><span></span></button>
+              <button role="button" class="owl-dot"><span></span></button>
+              <button role="button" class="owl-dot"><span></span></button>
             </div>
           </div>
         </div>
-        <div class="controls"></div>
+
       </div>
     </div>
     <div class="eco__casest-right">
@@ -797,7 +753,7 @@ Footer site map
     <div class="container">
       <div class="d-md-flex">
         <div class="eco-footer__buttons">
-          <button class="eco-footer__button-item is-active ">Eninrac Consulting</button>
+          <button class="eco-footer__button-item is-active">Eninrac Consulting</button>
           <button class="eco-footer__button-item ">Omnicore Plus</button>
           <button class="eco-footer__button-item ">Vantedge</button>
           <button class="eco-footer__button-item ">Warehouses In India</button>
@@ -807,16 +763,22 @@ Footer site map
         <div class="eco-footer__information-details">
           <div class="eco__posts">
             <div class="small-article-eco-post"
-              style="background:lightblue; color:#fff; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style="color: white;">
+              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+              <a href="#" class="d-flex" style=" color:#000;">
                 <div class="position-relative" style="width: 88px; height: 70px;">
                   <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
                     class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
                 </div>
-                <h3 class=" small-article-heading fs-14 fw-500 my-2"
-                  style="width:calc(100% - 88px); flex-grow: 1; padding: 4px 25px 6px 14px;">
-                  Eninrac Office Noida
-                </h3>
+                <div class="" style="padding: 4px 25px 6px 14px;">
+                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                    style="width:calc(100% - 88px); flex-grow: 1; ">
+                    Eninrac Office Noida <span style="width:20px; height:20px;font-size:16px"
+                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                      <i class="icofont-long-arrow-right"></i></span>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
               </a>
             </div>
           </div>
@@ -839,18 +801,24 @@ Footer site map end
       <div class="row">
         <div class="col-md-6">
           <div class="row row-gap-3">
-            <div class="col-md-6"><button class="w-75 enquiry-btn-item">Request a Call</button></div>
+            <div class="col-md-6"><button class="w-75 enquiry-btn-item">
+                <a href="https://eninrac.com/submit-rfp#rfp-submitor" class="text-white">
+                  Request a Call</a></button></div>
             <div class="col-md-6">
-              <div class=""><button class="w-75 enquiry-btn-item">Request a Quote</button></div>
+              <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
+                    href="https://eninrac.com/submit-rfp#rfp-submitor">Request a Quote</a> </button></div>
             </div>
             <div class="col-md-6">
-              <div class=""><button class="w-75 enquiry-btn-item"> Employment</button></div>
+              <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
+                    href="https://eninrac.com/submit-rfp#rfp-submitor">Employment</a> </button></div>
             </div>
             <div class="col-md-6">
-              <div class=""><button class="w-75 enquiry-btn-item">Marketing</button></div>
+              <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
+                    href="https://eninrac.com/submit-rfp#rfp-submitor">Marketing</a> </button></div>
             </div>
             <div class="col-md-6">
-              <div class=""><button class="w-75 enquiry-btn-item">others</button></div>
+              <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
+                    href="https://eninrac.com/submit-rfp#rfp-submitor">others</a> </button></div>
             </div>
           </div>
         </div>
