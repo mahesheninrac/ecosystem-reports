@@ -141,7 +141,7 @@
 
   <section style="padding:88px 0px 80px 0px">
     <div class="container">
-      <div class="content mt-5 pt-2 mx-auto" style="max-width:700px; ">
+      <div class="content pt-2 mx-auto" style="max-width:700px; ">
         <p class="text-center">Ecosystem survey</p>
         <h1 class="fw-700 text-center">Quick Questionnaire Creation Painless Programming.</h1>
         <p class=" mb-2 text-center" style="font-size:17px">Give Knit your research objectives, use case, and audience
