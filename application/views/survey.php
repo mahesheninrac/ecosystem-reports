@@ -9,16 +9,107 @@
 
   <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
+  <style>
+    .accordion-section {
+      background-color: #D0DDF7;
+    }
 
+    .accordion-container {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .accordion-container .accordion {
+      margin-bottom: 8px;
+    }
+
+    .accordion-inner {
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 16px 20px;
+      display: flex;
+      color: inherit;
+      border-radius: 6px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .single-about-icon-box.single-box-accordion {
+      background-color: #fff;
+      color: #041424;
+      transition: background-color 0.4s ease-in-out;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .single-about-icon-box.single-box-accordion:hover {
+      background-color: #041424 !important;
+      color: #fff !important;
+    }
+
+    .single-about-icon-box .accordion-heading {
+      font-weight: 600;
+      line-height: 25.5px;
+      font-size: 17px;
+    }
+
+    .single-about-icon-box .accordion-expand p {
+      color: #fff;
+      opacity: 0.8 !important;
+    }
+
+    .single-box-accordion.is-open {
+      border-radius: 6px;
+      background-color: #041424;
+      color: #fff;
+    }
+
+    .single-about-icon-box .accordion-expand {
+      padding-left: 20px;
+      padding-right: 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+    }
+
+    .single-about-icon-box .accordion-expand.active {
+      padding-bottom: 16px;
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    .accordion-section img {
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      width: 100%;
+    }
+
+    .accordion-section .image-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .accordion-section img.active {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-md bg-white py-4">
     <div class="container-fluid">
       <a class="navbar-brand " href="<?= base_url('') ?>">
-
-
         <img src="<?= base_url('assets/images/final-logo-ecosystem.png') ?>" class="w-100 h-80" alt="home-page-banner">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,82 +138,129 @@
       </div>
     </div>
   </nav>
-  <div class="container-xxl p-4">
-    <div class="text-center p-4">
-      <p>DASHBOARD</p>
-      <P class="fw-bold fs-30">Eninrac’s Survey</P>
+
+  <section style="padding:88px 0px 80px 0px">
+    <div class="container">
+      <div class="content mt-5 pt-2 mx-auto" style="max-width:700px; ">
+        <p class="text-center">Ecosystem survey</p>
+        <h1 class="fw-700 text-center">Quick Questionnaire Creation Painless Programming.</h1>
+        <p class=" mb-2 text-center" style="font-size:17px">Give Knit your research objectives, use case, and audience
+          criteria and get an
+          editable draft of your
+          questionnaire in minutes.</p>
+        <a href=""></a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6"></div>
+      </div>
     </div>
+  </section>
 
-
-    <div class="d-flex flex-row justify-content-around p-5">
-      <div class="survey-card ev">
-        <a href="">
-
-          <div class="text-center">
-            <img src="<?= base_url('assets/images/ev-line.svg') ?>" alt="">
-            <p class="p-1">EV</p>
+  <section class="accordion-section" style="padding:88px 0px 80px 0px">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-6">
+          <div class="section-title left style-two" style="margin-bottom: 40px;">
+            <h5 class="fw-600 text-primary mb-3">IT Support For Business</h5>
+            <h3 class="fw-700 mt-1">Ensuring Your Success Trusted</h3>
+            <h3 class="fw-700">IT Services Source</h3>
+            <p class="mt-3">Monotonectally synergize granular markets and front markets. Collaboratively visualize
+              strategic infomediaries after multimedia based models. Synergistically task state of the
+              art infrastructures for</p>
           </div>
-        </a>
-      </div>
+          <div class="accordion-container">
+            <div class="single-about-icon-box single-box-accordion research-content is-open">
+              <div class="about-icon-box-content accordion-inner">
+                <div class="accordion-heading">Survey Creation</div>
+              </div>
+              <div class="accordion-expand active">
+                <p>Let Knit instantly draft a questionnaire that leverages your past
+                  research and new objectives – all available in a doc-like editor to edit
+                  directly, comment feedback, or circulate with your team. Then, within
+                  that same day, your dedicated Knit Researcher will work with you to
+                  finalize, program and launch the survey.</p>
+              </div>
+            </div>
 
-      <div class="solar survey-card">
-        <a href="">
+            <div class="single-about-icon-box single-box-accordion survey-content">
+              <div class="about-icon-box-content accordion-inner">
+                <div class="accordion-heading">Survey Creation</div>
+              </div>
+              <div class="accordion-expand">
+                <p>Let Knit instantly draft a questionnaire that leverages your past
+                  research and new objectives – all available in a doc-like editor to edit
+                  directly, comment feedback, or circulate with your team. Then, within
+                  that same day, your dedicated Knit Researcher will work with you to
+                  finalize, program and launch the survey.</p>
+              </div>
+            </div>
 
-          <div class="text-center">
-            <img src="<?= base_url('assets/images/solar-line.svg') ?>" alt="">
-            <p class="p-1">Solar</p>
+            <div class="single-about-icon-box single-box-accordion eninrac-content">
+              <div class="about-icon-box-content accordion-inner">
+                <div class="accordion-heading">Survey Creation</div>
+              </div>
+              <div class="accordion-expand">
+                <p>Let Knit instantly draft a questionnaire that leverages your past
+                  research and new objectives – all available in a doc-like editor to edit
+                  directly, comment feedback, or circulate with your team. Then, within
+                  that same day, your dedicated Knit Researcher will work with you to
+                  finalize, program and launch the survey.</p>
+              </div>
+            </div>
+
+            <div class="single-about-icon-box single-box-accordion ecosystem-content">
+              <div class="about-icon-box-content accordion-inner">
+                <div class="accordion-heading">Survey Creation</div>
+              </div>
+              <div class="accordion-expand">
+                <p>Let Knit instantly draft a questionnaire that leverages your past
+                  research and new objectives – all available in a doc-like editor to edit
+                  directly, comment feedback, or circulate with your team. Then, within
+                  that same day, your dedicated Knit Researcher will work with you to
+                  finalize, program and launch the survey.</p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
           </div>
-        </a>
-
-      </div>
-      <div class="wind survey-card">
-        <a href="">
-
-          <div class="text-center">
-            <img src="<?= base_url('assets/images/oa-line.svg') ?>" alt="">
-            <p class="p-1">Open Access</p>
+        </div>
+        <div class="col-md-6">
+          <div class="image-container d-none d-md-block">
+            <img class="research-content active" src="https://shorturl.at/hQNrv" alt="">
+            <img class="survey-content" src="https://shorturl.at/Yvw6H" alt="">
+            <img class="eninrac-content" src="https://shorturl.at/hQNrv" alt="">
+            <img class="ecosystem-content" src="https://shorturl.at/Yvw6H" alt="">
           </div>
-        </a>
-
+        </div>
       </div>
-
     </div>
-    <div class="d-flex flex-row justify-content-around p-5">
-      <div class="survey-card ev">
-        <a href="">
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const accordions = document.querySelectorAll(".single-about-icon-box");
 
-          <div class="text-center">
-            <img src="<?= base_url('assets/images/ev-line.svg') ?>" alt="">
-            <p class="p-1">EV</p>
-          </div>
-        </a>
-      </div>
-      <div class="solar survey-card">
-        <a href="">
+      accordions.forEach(accordion => {
+        accordion.addEventListener("click", () => {
+          accordions.forEach(item => {
+            item.classList.remove("is-open");
+            item.querySelector(".accordion-expand").classList.remove("active");
+          });
 
-          <div class="text-center">
-            <img src="<?= base_url('assets/images/tariff-line.svg') ?>" alt="">
-            <p class="p-1">Tariff</p>
-          </div>
-        </a>
+          accordion.classList.add("is-open");
+          accordion.querySelector(".accordion-expand").classList.add("active");
 
-      </div>
-      <div class="wind survey-card">
-        <a href="">
+          document.querySelectorAll(".image-container img").forEach(img => {
+            img.classList.remove("active");
+          });
 
-          <div class="text-center">
-            <img src="<?= base_url('assets/images/power-line.svg') ?>" alt="">
-            <p class="p-1">Power</p>
-          </div>
-        </a>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
+          const relatedImage = document.querySelector(".image-container img." + accordion.classList[2]);
+          if (relatedImage) {
+            relatedImage.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
 
   <footer class="footer text-center text-md-start z-1">
     <div class="container-fluid">
@@ -189,88 +327,3 @@
 </body>
 
 </html>
-
-
-<div class="">
-  <h3><b>TBCB GUIDELINES FOR PROCUREMENT OF STORAGE CAPACITY – INDIA
-    </b></h3>
-  <h4><b>Analysis of Ministry of Power Resolution of TBCB Guidelines for Procurement Storage Capacity & Stored Energy
-      from PHSP
-    </b></h4>
-  <p class="text-primary">DESCRIPTION OF THE RESOLUTION
-  </p>
-  <div class="my-2">
-    <p class="t" style="text-align:justify;">
-      Tariff-Based Competitive Bidding Guidelines for the procurement of storage capacity or stored energy from Pumped
-      Storage Plants (PSPs), issued by the Ministry of Power (MoP), India aims to support India's energy transition by
-      enhancing grid stability, integrating renewable energy sources, and reducing peak-time electricity costs. The
-      guidelines establish a transparent, standardized framework for procurement, ensuring fair risk-sharing among
-      stakeholders, including developers, procurers, financial institutions, and regulatory bodies.
-    </p>
-    <p></p>
-    <p style="text-align: justify;">
-      Key provisions include bidding structures, financial eligibility criteria, performance guarantees, and contract
-      terms. The document also outlines the technical requirements, project timelines, and tariff structures for PSP
-      development. Additionally, it highlights environmental considerations, land acquisition policies, and social
-      impact assessments. By defining clear regulatory processes and dispute resolution mechanisms, these guidelines aim
-      to attract investment, improve energy security, and drive long-term sustainability in India's evolving power
-      sector.
-    </p>
-    <p style="text-align: justify;">
-      The policy supports the National Electricity Plan 2023, which projects a need for 27 GW of PSP capacity by
-      2031-32. It enables cost-effective peak load management, reduces carbon emissions, and encourages public-private
-      partnerships (PPPs) to accelerate storage infrastructure development while balancing economic and environmental
-      factors.
-    </p>
-    <img src="https://omnicoreplus.com/assets/om-upload/picture7.png" alt="">
-  </div>
-
-  <div class="my-2">
-    <h3><b>ENERGY FLOW & ECONOMIC BENEFITS OF PHSPs</b></h3>
-
-
-
-    <img src="https://omnicoreplus.com/assets/om-upload/picture6.png" alt="">
-
-    <img src="https://omnicoreplus.com/assets/om-upload/picture8.png" alt="">
-
-    <h3><b>FINANCIAL FLOW & INVESTMENT REQUIREMENT - PHSP
-      </b></h3>
-
-    <div class="my-2">
-      <p style="text-align: justify;">
-        The policy supports the National Electricity Plan 2023, which projects a need for 27 GW of PSP capacity by
-        2031-32. It enables cost-effective peak load management, reduces carbon emissions, and encourages public-private
-        partnerships (PPPs) to accelerate storage infrastructure development.
-      </p>
-      <img src="https://omnicoreplus.com/assets/om-upload/picture9.png" alt="">
-    </div>
-  </div>
-
-  <div class="my-2">
-    <h3><b>ENVIRONMENT & SOCIAL IMPACT
-      </b></h3>
-    <img src="https://omnicoreplus.com/assets/om-upload/picture10.png" alt="">
-    <div class="my-2">
-      <p class="text-primary">
-        KEY IMPACTS
-      </p>
-      <div class="">
-        <p style="text-align: justify;">Pumped Storage Plants (PSPs) play a crucial role in reducing carbon emissions by
-          integrating renewable energy and minimizing reliance on fossil-fuel-based power generation. However, their
-          development comes with environmental and social considerations.
-        </p>
-        <p style="text-align: justify;">PSPs require large reservoirs, which can lead to land acquisition challenges,
-          deforestation, and ecosystem disturbances. Water resource management is a key concern, as PSPs may alter river
-          flows and affect aquatic biodiversity. Additionally, local communities near project sites may face
-          displacement and livelihood disruptions, necessitating resettlement plans and fair compensation.
-        </p>
-        <p style="text-align: justify;">To mitigate these impacts, PSP projects must undergo environmental impact
-          assessments (EIA), adhere to sustainability guidelines, and implement afforestation programs. Proper
-          stakeholder engagement and community development initiatives are essential to balancing economic benefits with
-          ecological and social responsibility.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
