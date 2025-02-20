@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Surveys</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
   <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
   <style>
@@ -138,7 +137,6 @@
       </div>
     </div>
   </nav>
-
   <section style="padding:88px 0px 80px 0px">
     <div class="container">
       <div class="content pt-2 mx-auto" style="max-width:700px; ">
@@ -156,25 +154,26 @@
       </div>
     </div>
   </section>
-
   <section class="accordion-section" style="padding:88px 0px 80px 0px">
     <div class="container">
       <div class="row align-items-start">
         <div class="col-md-6">
           <div class="section-title left style-two" style="margin-bottom: 40px;">
-            <h5 class="fw-600 text-primary mb-3">IT Support For Business</h5>
-            <h3 class="fw-700 mt-1">Ensuring Your Success Trusted</h3>
-            <h3 class="fw-700">IT Services Source</h3>
-            <p class="mt-3">Monotonectally synergize granular markets and front markets. Collaboratively visualize
+            <h5 class="fw-600 text-primary mb-3">Featured Perspectives</h5>
+            <h3 class="fw-700 mt-1">Edge Enabling Faster & Efficient
+            </h3>
+            <h3 class="fw-700">Deployment of Business Decisions</h3>
+            <p class="mt-3">Gain the edge from our innovative insights which are mission
+              critical to organizations Collaboratively visualize
               strategic infomediaries after multimedia based models. Synergistically task state of the
               art infrastructures for</p>
           </div>
           <div class="accordion-container">
-            <div class="single-about-icon-box single-box-accordion research-content is-open">
+            <div class="single-about-icon-box single-box-accordion research-content ">
               <div class="about-icon-box-content accordion-inner">
                 <div class="accordion-heading">Survey Creation</div>
               </div>
-              <div class="accordion-expand active">
+              <div class="accordion-expand ">
                 <p>Let Knit instantly draft a questionnaire that leverages your past
                   research and new objectives – all available in a doc-like editor to edit
                   directly, comment feedback, or circulate with your team. Then, within
@@ -209,11 +208,11 @@
               </div>
             </div>
 
-            <div class="single-about-icon-box single-box-accordion ecosystem-content">
+            <div class="single-about-icon-box single-box-accordion ecosystem-content is-open">
               <div class="about-icon-box-content accordion-inner">
                 <div class="accordion-heading">Survey Creation</div>
               </div>
-              <div class="accordion-expand">
+              <div class="accordion-expand active">
                 <p>Let Knit instantly draft a questionnaire that leverages your past
                   research and new objectives – all available in a doc-like editor to edit
                   directly, comment feedback, or circulate with your team. Then, within
@@ -226,6 +225,7 @@
         </div>
         <div class="col-md-6">
           <div class="image-container d-none d-md-block">
+            <img class="render-closed-accordion" src="http://short.energyinfra.market/1oik7" alt="">
             <img class="research-content active" src="https://shorturl.at/hQNrv" alt="">
             <img class="survey-content" src="https://shorturl.at/Yvw6H" alt="">
             <img class="eninrac-content" src="https://shorturl.at/hQNrv" alt="">
@@ -238,30 +238,41 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const accordions = document.querySelectorAll(".single-about-icon-box");
-
+      function updateImages() {
+        const activeAccordion = document.querySelector(".single-about-icon-box.is-open");
+        const images = document.querySelectorAll(".image-container img");
+        images.forEach(img => img.classList.remove("active"));
+        if (activeAccordion) {
+          const relatedImage = document.querySelector(".image-container img." + activeAccordion.classList[2]);
+          if (relatedImage) {
+            relatedImage.classList.add("active");
+          }
+        } else {
+          const defaultImage = document.querySelector(".image-container img.render-closed-accordion");
+          if (defaultImage) {
+            defaultImage.classList.add("active");
+          }
+        }
+      }
       accordions.forEach(accordion => {
         accordion.addEventListener("click", () => {
+          const isActive = accordion.classList.contains("is-open");
+
           accordions.forEach(item => {
             item.classList.remove("is-open");
             item.querySelector(".accordion-expand").classList.remove("active");
           });
 
-          accordion.classList.add("is-open");
-          accordion.querySelector(".accordion-expand").classList.add("active");
-
-          document.querySelectorAll(".image-container img").forEach(img => {
-            img.classList.remove("active");
-          });
-
-          const relatedImage = document.querySelector(".image-container img." + accordion.classList[2]);
-          if (relatedImage) {
-            relatedImage.classList.add("active");
+          if (!isActive) {
+            accordion.classList.add("is-open");
+            accordion.querySelector(".accordion-expand").classList.add("active");
           }
+          updateImages();
         });
       });
-    });
-  </script>
 
+      updateImages();
+    }); </script>
   <footer class="footer text-center text-md-start z-1">
     <div class="container-fluid">
       <div class="row" style="padding:2rem">
@@ -321,8 +332,6 @@
       </div>
     </div>
   </footer>
-
-
   <script src="<?= base_url('assets/js/footer.js') ?>"></script>
 </body>
 
