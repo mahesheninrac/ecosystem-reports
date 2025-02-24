@@ -667,9 +667,25 @@
         <div class="intro">
           <h2 class="h2 h2-casestudy">Our mission is to raise the impact of research – and we're delivering</h2>
         </div>
-        <div class="carousel-card owl-carousel owl-theme owl-loaded owl-drag">
-          <div class="owl-stage-outer">
-            <div class="result--view w-100 owl-stage">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="result--view w-100">
+              <div class="d-flex w-100 h-100 owl-item Active">
+                <div class="">
+                  <img width="216" height="216"
+                    src="https://kadence.com/wp-content/uploads/2020/07/mrs-oppies-432x410.jpg"
+                    class=" left--result-image" alt="">
+                </div>
+                <div class="eco__result-content">
+                  <h3 class="eco__result-award h6 fw-700">Market Research Supplier of the Year</h3>
+                  <p class="eco__result-achievment">Winner</p>
+                  <cite class="eco__result-cite">— Marketing Research & Insight Excellence Awards – 2019</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="result--view w-100">
               <div class="d-flex w-100 h-100 owl-item Active">
                 <div class="">
                   <img width="216" height="216"
@@ -1135,8 +1151,8 @@ Footer site map
       </div>
     </div>
     <div class="container">
-      <div class="d-md-flex">
-        <div class="eco-footer__buttons" id="tabButtons">
+      <div class="d-md-flex row">
+        <div class="eco-footer__buttons col-md-3" id="tabButtons">
           <button class="eco-footer__button-item is-active" data-tab="eninrac">Eninrac Consulting</button>
           <button class="eco-footer__button-item" data-tab="omnicore">Omnicore Plus</button>
           <button class="eco-footer__button-item" data-tab="vantedge">Vantedge</button>
@@ -1145,160 +1161,197 @@ Footer site map
           <button class="eco-footer__button-item" data-tab="vision">Vision Board</button>
         </div>
 
-        <div class="eco-footer__information-details" id="tabContent">
-          <div class="eco__posts" id="eninrac" style="display: block;">
-            <div class="small-article-eco-post"
-              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style=" color:#000;">
-                <div class="position-relative" style="width: 88px; height: 70px;">
-                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
-                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
-                </div>
-                <div class="" style="padding: 4px 25px 6px 14px;">
-                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
-                    style="width:calc(100% - 88px); flex-grow: 1; ">
-                    Eninrac Office Noida <span style="width:20px; height:20px;font-size:16px"
-                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
-                      <i class="icofont-long-arrow-right"></i></span>
-                  </h3>
+        <div class="eco-footer__information-details col-md-9" id="tabContent">
+          <div class="row">
+            <div class="col">
+              <div class="eco__posts" id="eninrac" style="display: block;">
+                <div class="small-article-eco-post"
+                  style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+                  <a href="#" class="d-flex" style=" color:#000;">
+                    <div class="position-relative" style="width: 88px; height: 70px;">
+                      <img
+                        src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                        class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;"
+                        alt="">
+                    </div>
+                    <div class="" style="padding: 4px 25px 6px 14px;">
+                      <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                        style="width:calc(100% - 88px); flex-grow: 1; ">
+                        Eninrac Office Noida <span style="width:20px; height:20px;font-size:16px"
+                          class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                          <i class="icofont-long-arrow-right"></i></span>
+                      </h3>
 
+                    </div>
+
+                  </a>
+                </div>
+              </div>
+
+              <div class="eco__posts" id="omnicore" style="display: none;">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="small-article-eco-post"
+                      style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+                      <a href="#" class="d-flex" style=" color:#000;">
+                        <div class="position-relative" style="width: 88px; height: 70px;">
+                          <img
+                            src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                            class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;"
+                            alt="">
+                        </div>
+                        <div class="" style="padding: 4px 25px 6px 14px;">
+                          <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                            style="width:calc(100% - 88px); flex-grow: 1; ">
+                            Eninrac Office Noida <span style="width:20px; height:20px;font-size:16px"
+                              class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                              <i class="icofont-long-arrow-right"></i></span>
+                          </h3>
+
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="eco-foter__image-wrapper">
+                      <div class="d-flex align-center justify-content-center"
+                        style="width: 100%; height: 100%; position: relative; overflow: hidden; left: -0.333313px; top: -0.364258px;">
+                        <img src="https://omnicoreplus.com/assets/om-upload/eninrac-i-mac-mockup.png" alt=""
+                          style="width: auto; object-fit: cover;" height="314">
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-              </a>
+
+              </div>
+
+              <div class="eco__posts" id="vantedge" style="display: none;">
+                <div class="small-article-eco-post"
+                  style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+                  <a href="#" class="d-flex" style=" color:#000;">
+                    <div class="position-relative" style="width: 88px; height: 70px;">
+                      <img
+                        src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                        class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;"
+                        alt="">
+                    </div>
+                    <div class="" style="padding: 4px 25px 6px 14px;">
+                      <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                        style="width:calc(100% - 88px); flex-grow: 1; ">
+                        Eninrac Office Noida <span style="width:20px; height:20px;font-size:16px"
+                          class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                          <i class="icofont-long-arrow-right"></i></span>
+                      </h3>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
+
+              <div class="eco__posts" id="warehouses" style="display: none;">
+                <div class="small-article-eco-post"
+                  style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+                  <a href="#" class="d-flex" style=" color:#000;">
+                    <div class="position-relative" style="width: 88px; height: 70px;">
+                      <img
+                        src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                        class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;"
+                        alt="">
+                    </div>
+                    <div class="" style="padding: 4px 25px 6px 14px;">
+                      <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                        style="width:calc(100% - 88px); flex-grow: 1; ">
+                        Warehouses in India <span style="width:20px; height:20px;font-size:16px"
+                          class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                          <i class="icofont-long-arrow-right"></i></span>
+                      </h3>
+
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class="small-article-eco-post"
+                  style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+                  <a href="#" class="d-flex" style=" color:#000;">
+                    <div class="position-relative" style="width: 88px; height: 70px;">
+                      <img
+                        src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                        class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;"
+                        alt="">
+                    </div>
+                    <div class="" style="padding: 4px 25px 6px 14px;">
+                      <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                        style="width:calc(100% - 88px); flex-grow: 1; ">
+                        Warehouses in India <span style="width:20px; height:20px;font-size:16px"
+                          class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                          <i class="icofont-long-arrow-right"></i></span>
+                      </h3>
+
+                    </div>
+
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="eco__posts" id="horizon" style="display: none;">
+                <div class="small-article-eco-post"
+                  style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+                  <a href="#" class="d-flex" style=" color:#000;">
+                    <div class="position-relative" style="width: 88px; height: 70px;">
+                      <img
+                        src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                        class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;"
+                        alt="">
+                    </div>
+                    <div class="" style="padding: 4px 25px 6px 14px;">
+                      <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                        style="width:calc(100% - 88px); flex-grow: 1; ">
+                        Horizon blogs <span style="width:20px; height:20px;font-size:16px"
+                          class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                          <i class="icofont-long-arrow-right"></i></span>
+                      </h3>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
+
+              <div class="eco__posts" id="vision" style="display: none;">
+                <div class="small-article-eco-post"
+                  style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
+                  <a href="#" class="d-flex" style=" color:#000;">
+                    <div class="position-relative" style="width: 88px; height: 70px;">
+                      <img
+                        src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
+                        class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;"
+                        alt="">
+                    </div>
+                    <div class="" style="padding: 4px 25px 6px 14px;">
+                      <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
+                        style="width:calc(100% - 88px); flex-grow: 1; ">
+                        Vision Board <span style="width:20px; height:20px;font-size:16px"
+                          class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
+                          <i class="icofont-long-arrow-right"></i></span>
+                      </h3>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
             </div>
+
           </div>
 
-          <div class="eco__posts" id="omnicore" style="display: none;">
-            <div class="small-article-eco-post"
-              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style=" color:#000;">
-                <div class="position-relative" style="width: 88px; height: 70px;">
-                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
-                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
-                </div>
-                <div class="" style="padding: 4px 25px 6px 14px;">
-                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
-                    style="width:calc(100% - 88px); flex-grow: 1; ">
-                    Eninrac Office Noida <span style="width:20px; height:20px;font-size:16px"
-                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
-                      <i class="icofont-long-arrow-right"></i></span>
-                  </h3>
-
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="eco__posts" id="vantedge" style="display: none;">
-            <div class="small-article-eco-post"
-              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style=" color:#000;">
-                <div class="position-relative" style="width: 88px; height: 70px;">
-                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
-                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
-                </div>
-                <div class="" style="padding: 4px 25px 6px 14px;">
-                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
-                    style="width:calc(100% - 88px); flex-grow: 1; ">
-                    Eninrac Office Noida <span style="width:20px; height:20px;font-size:16px"
-                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
-                      <i class="icofont-long-arrow-right"></i></span>
-                  </h3>
-
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="eco__posts" id="warehouses" style="display: none;">
-            <div class="small-article-eco-post"
-              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style=" color:#000;">
-                <div class="position-relative" style="width: 88px; height: 70px;">
-                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
-                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
-                </div>
-                <div class="" style="padding: 4px 25px 6px 14px;">
-                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
-                    style="width:calc(100% - 88px); flex-grow: 1; ">
-                    Warehouses in India <span style="width:20px; height:20px;font-size:16px"
-                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
-                      <i class="icofont-long-arrow-right"></i></span>
-                  </h3>
-
-                </div>
-
-              </a>
-            </div>
-
-            <div class="small-article-eco-post"
-              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style=" color:#000;">
-                <div class="position-relative" style="width: 88px; height: 70px;">
-                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
-                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
-                </div>
-                <div class="" style="padding: 4px 25px 6px 14px;">
-                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
-                    style="width:calc(100% - 88px); flex-grow: 1; ">
-                    Warehouses in India <span style="width:20px; height:20px;font-size:16px"
-                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
-                      <i class="icofont-long-arrow-right"></i></span>
-                  </h3>
-
-                </div>
-
-              </a>
-            </div>
-
-          </div>
-
-          <div class="eco__posts" id="horizon" style="display: none;">
-            <div class="small-article-eco-post"
-              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style=" color:#000;">
-                <div class="position-relative" style="width: 88px; height: 70px;">
-                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
-                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
-                </div>
-                <div class="" style="padding: 4px 25px 6px 14px;">
-                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
-                    style="width:calc(100% - 88px); flex-grow: 1; ">
-                    Horizon blogs <span style="width:20px; height:20px;font-size:16px"
-                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
-                      <i class="icofont-long-arrow-right"></i></span>
-                  </h3>
-
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="eco__posts" id="vision" style="display: none;">
-            <div class="small-article-eco-post"
-              style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
-              <a href="#" class="d-flex" style=" color:#000;">
-                <div class="position-relative" style="width: 88px; height: 70px;">
-                  <img src="https://kadence.com/wp-content/uploads/2020/07/Kadence-China-1-e1595423194741-176x176.png"
-                    class="small-article-post__image position-absolute w-100 top-0 left-0" style="height: 100%;" alt="">
-                </div>
-                <div class="" style="padding: 4px 25px 6px 14px;">
-                  <h3 class="w-100 small-article-heading fs-14 fw-700 mb-0 my-1 d-flex gap-1"
-                    style="width:calc(100% - 88px); flex-grow: 1; ">
-                    Vision Board <span style="width:20px; height:20px;font-size:16px"
-                      class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
-                      <i class="icofont-long-arrow-right"></i></span>
-                  </h3>
-
-                </div>
-
-              </a>
-            </div>
-          </div>
         </div>
+
+
       </div>
     </div>
 
@@ -1362,9 +1415,6 @@ Footer site map end
   </section>
 
   <!-- contact Category Section End-->
-
-
-
 
   <section class="relative px-0  " style="background-color:#CAC0FF;  padding-bottom: 2rem;">
     <div class="container-xxl  max-w-content-container d-md-flex align-items-lg-center pb-5 pb-md-5 pt-5 pt-md-5 mx-1">
@@ -1448,7 +1498,8 @@ Footer site map end
               <div class="newsletter-form line-height:1.1 ">
                 <p class="mb-2">Subscribe to our newsletter</p>
                 <div class="w-100 newsletterfooter-input-i position-relative">
-                  <input type="email" name="" id="" class="mb-2 w-100 " placeholder="your work email">
+                  <input type="email" name="subscriberemail" style="font-size: 1rem;font-weight: 500; " id=""
+                    class="text-white ps-2  mb-2 w-100" placeholder="your work email">
                   <i class="icofont-long-arrow-right position-absolute"></i>
                 </div>
                 <p style="font-size: .8rem;">By submitting this form, you agree to Eninrac&#39;s privacy policy.</p>
@@ -1462,18 +1513,13 @@ Footer site map end
                       alt="Twitter">
                   </a>
                 </div>
-
-
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row " style="padding: 0 2rem;">
-
         <p class="copyright mb-0" style="font-size: 1.3rem;">&copy; 2024 Eninrac. All rights reserved.</p>
-
-
         <p class="privacy  "><a href="">Privacy Policy</a> • <a href="">Terms & Conditions</a></p>
 
       </div>

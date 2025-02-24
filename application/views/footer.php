@@ -1,6 +1,4 @@
 <div class="error error-popup position-fixed w-100 h-100 d-none" style="top: 0;left: 0;background: #000000de;z-index: 999999;"></div>
-
-
 </div>
 <footer class="mt-3">
     <div class="card h-100 block-card rounded-0">
@@ -10,6 +8,7 @@
     </div>
 </footer>
 <style>
+   
     .update-wrapper .content-update {
         position: fixed;
         top: var(--header-height);
