@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="<?= base_url() ?>assets/fonts/fonts.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@v1.3.0/dist/dotlottie-player.js"></script>
 </head>
 
 <body>

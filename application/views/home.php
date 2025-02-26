@@ -7,9 +7,91 @@
   <title>Ecosystem</title>
   <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
+  <script src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@v1.3.0/dist/dotlottie-player.js"></script>
 </head>
-
 <body>
+  <style>
+    #container {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #container:hover .attribution {
+      bottom: 20px;
+      opacity: 1;
+    }
+
+    .center {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    iframe {
+      border: 0;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .attribution {
+      display: block;
+      transition: all 0.8s ease 0s;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      padding: 7px 9px;
+      position: absolute;
+      bottom: -30px;
+      left: 10px;
+      text-decoration: none;
+      z-index: 10;
+      background: rgba(34, 41, 47, 0.04);
+      opacity: 0.4;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 8pt;
+      color: rgba(43, 52, 59, 0.8);
+    }
+
+    .attribution.dark {
+      background: rgba(255, 255, 255, 0.04);
+      opacity: 0.8;
+    }
+
+    .attribution.dark span {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    .video-container img {
+      width: 100%;
+      max-width: 400px;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    }
+
+    .owl-item.active .video-container img {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .text-container p {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .owl-item.active .text-container p {
+      opacity: 1;
+    }
+  </style>
   <!-- navbar section  -->
   <!-- Navbar Section -->
   <nav class="navbar navbar-expand-md bg-white py-4">
@@ -46,16 +128,55 @@
 
 
   <!-- Hero Section -->
-  <div class="overflow-hidden hero  container-fluid" style="background-color: #d0ddf7;">
-    <div class="hero-section pb-5 row" style="align-items: start; justify-content: space-between;">
-      <div class="text-container w-sm-100 col-md-5" style="height:100%; padding: 10px 10px 50px 10px;">
-        <p class="md-text-h1 text-dark">
-          Market Intelligence for Enabling Indian Energy Transition
-        </p>
-      </div>
-      <div class="video-container col-md-7">
-        <img src="<?= base_url('assets/images/accord.svg') ?>" style="position: relative;right: -31px;top: -13px;"
-          class="img-fluid" alt="home-page-banner">
+  <div class=" hero-banner-section" style="background-color: #d0ddf7;">
+    <div class="container">
+      <div class="position-relative">
+        <div id="container" class="position-absolute d-none d-sm-block d-md-block d-lg-block">
+          <dotlottie-player background="transparent" speed="1" loop="" autoplay=""></dotlottie-player>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item fadeInUp">
+            <div class=" d-flex align-items-center justify-content-between">
+              <div class="text-container  p-4">
+                <p class="">
+                  HEllo Market Intelligence for Enabling Indian Energy Transition
+                </p>
+              </div>
+              <div class="video-container  d-flex justify-content-end align-items-center p-5">
+                <img src="https://kadence.com/wp-content/uploads/2023/09/slide-asset-2.png" class="image-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="item fadeInUp">
+            <div class=" d-flex align-items-center justify-content-between">
+              <div class="text-container  p-4">
+                <p class="">
+                  Your customers don't fit in a box, and neither does our approach.
+                </p>
+              </div>
+              <div
+                class="video-container d-none d-sm-flex d-lg-flex d-md-flex justify-content-end align-items-center p-5">
+                <img src="https://kadence.com/wp-content/uploads/2023/09/slide-asset-2.png" class="image-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="item fadeInUp">
+            <div class=" d-flex align-items-center justify-content-between">
+              <div class="text-container  p-4">
+                <p class="">
+                  A fresh approach to market research.
+                </p>
+              </div>
+              <div class="video-container  d-flex justify-content-end align-items-center p-5">
+                <img src="https://kadence.com/wp-content/uploads/2023/09/slide-asset-2.png" class="image-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -669,8 +790,8 @@
         </div>
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <div class="result--view w-100">
-              <div class="d-flex w-100 h-100 owl-item Active">
+            <div class="result--view w-100 ">
+              <div class="d-flex w-100 h-100 Active">
                 <div class="">
                   <img width="216" height="216"
                     src="https://kadence.com/wp-content/uploads/2020/07/mrs-oppies-432x410.jpg"
@@ -686,7 +807,7 @@
           </div>
           <div class="item">
             <div class="result--view w-100">
-              <div class="d-flex w-100 h-100 owl-item Active">
+              <div class="d-flex w-100 h-100 Active">
                 <div class="">
                   <img width="216" height="216"
                     src="https://kadence.com/wp-content/uploads/2020/07/mrs-oppies-432x410.jpg"
@@ -701,13 +822,7 @@
             </div>
           </div>
 
-          <div class="controls">
-            <div class="owl-dots">
-              <button role="button" class="owl-dot active"><span></span></button>
-              <button role="button" class="owl-dot"><span></span></button>
-              <button role="button" class="owl-dot"><span></span></button>
-            </div>
-          </div>
+
         </div>
 
       </div>
@@ -729,7 +844,8 @@
             better outcomes for advertisers.</p>
           <div class="btn-wrap-case-study">
             <p class="p-0  fw-800 fs-14">
-              <a href="https://store.eninrac.com/browse-categories" class="d-flex align-items-center">
+              <a href="https://store.eninrac.com/browse-categories" style="width: max-content;"
+                class="d-flex right-arrow-link align-items-center">
 
                 <span style="width:20px; height:20px;font-size:16px"
                   class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
@@ -1538,6 +1654,7 @@ Footer site map end
   <script src="<?= base_url() ?>assets/plugins/daterangepicker.js"></script>
   <script src="<?= base_url() ?>assets/js/app.js"></script>
   <script src="<?= base_url() ?>assets/js/script.js"></script>
+  <script src="<?= base_url() ?>assets/js/embedScript.js"></script>
   <script src="<?= base_url('assets/js/footer.js') ?>"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 

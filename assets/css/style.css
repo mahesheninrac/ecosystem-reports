@@ -635,9 +635,35 @@ a {
 
 .hero-section {
   display: flex;
-  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+  .container #container {
+    width: 202.734px !important;
+    height: 202.734px !important;
+    right: 36px !important;
+  }
+
+  .video-container img {
+    width: 170px !important;
+  }
+
+  .hero-banner-section {
+    height: 60vh !important;
+  }
+}
+
+.container #container {
+  width: 400px;
+  right: 70px;
+}
+
+
+
+.hero-banner-section {
+  height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -649,6 +675,13 @@ a {
 
   .hero-section h1 {
     max-width: 50%;
+  }
+
+  .hero-banner-section .owl-item .item p {
+    font-size: 3.125rem !important;
+    font-weight: 400 !important;
+    line-height: 4.25rem !important;
+    padding-bottom: 4.68rem !important;
   }
 }
 
