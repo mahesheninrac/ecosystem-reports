@@ -532,12 +532,10 @@
 
             <div class="col-md-6 d-flex justify-content-center mt-5 mt-md-0">
                 <picture>
-                    <source media="(min-width: 640px)" srcset="
-                https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701813186/assets/home/home-events_cfh9zf.webp
-              " />
+                    <source media="(min-width: 640px)"
+                        srcset="https://omnicoreplus.com/assets/om-upload/3-in-1-collage.png">
                     <img class="img-fluid object-cover mx-auto mx-md-0 w-100 max-w-md h-auto"
-                        src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701812086/assets/home/home-events-mobile__qffpzj.webp"
-                        alt="" />
+                        src="https://omnicoreplus.com/assets/om-upload/3-in-1-collage.png" alt="">
                 </picture>
             </div>
             <div class="col-md-6 pe-md-5 px-3">

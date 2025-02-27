@@ -3,8 +3,10 @@ $(document).ready(function () {
         items: 1, 
         loop: true,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 6000,
         autoplayHoverPause: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
         nav: false,
         dots: false,
         responsive: {
@@ -13,4 +15,5 @@ $(document).ready(function () {
             1000: { items: 1 }
         }
     });
+
 });

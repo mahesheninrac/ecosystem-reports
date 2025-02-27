@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +7,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="<?= base_url('assets/fonts/fonts.css') ?>" />
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
-
   <style>
     .report-header {
       position: relative;
@@ -185,11 +183,8 @@
       font-weight: 700;
     }
   </style>
-
 </head>
-
 <body>
-
   <!-- navbar section  -->
   <nav class="navbar navbar-expand-md bg-white py-4">
     <div class="container-fluid">
@@ -224,9 +219,6 @@
       </div>
     </div>
   </nav>
-
-
-
   <!-- header -->
   <header class="report-header report-header-lg text-center px-2 px-lg-5">
     <img
@@ -239,14 +231,8 @@
       <p>Actionable intelligence to inform your strategic and commercial decision making</p>
     </div>
   </header>
-
-
-
-
   <!-- testing ribbon -->
   <div class="container-fluid  text-center p-4 pointer w-blue">
-
-
     <div class="ribbon-content">
       <ul class="vb-res list-style-none d-flex p-0 width-500 justify-content-around m-auto">
 
@@ -681,9 +667,6 @@
       </div>
     </div>
   </footer>
-
-
-
   <script>
     function getScreenPosition(element) {
       const rect = element.getBoundingClientRect();
@@ -697,7 +680,6 @@
 
     function topCheck(element) {
       let currentPosition = getScreenPosition(element);
-
       if (currentPosition.screenY > -180 && currentPosition.screenY < 35) {
         return true;
       }
@@ -740,24 +722,16 @@
       }
       if (topCheck(document.querySelectorAll('.contentsection')[4])) {
         showArrow("five")
-
       }
       if (topCheck(document.querySelectorAll('.contentsection')[5])) {
         showArrow("six")
-
       }
-
-
-
     })
-
     // For arrow
     function showArrow(id) {
       // Hide all content sections
       var contents = document.querySelectorAll('.arrow');
-
       contents.forEach(function (content) {
-
         content.classList.remove('active');
       });
       let ele = document.getElementById(id);
@@ -765,20 +739,14 @@
       //  .classList.add("text-primary-700")
       ele.classList.add('active');
     }
-
-
-
     document.getElementById('btn-ev').addEventListener('click', function () {
-
       highlight(this);
       showContent('content-ev');
-
     });
 
     document.getElementById('btn-solar').addEventListener('click', function () {
       highlight(this);
       showContent('content-solar');
-
     });
 
     document.getElementById('btn-wind').addEventListener('click', function () {
@@ -786,9 +754,6 @@
       showContent('content-wind');
 
     });
-
-
-
     document.getElementById('btn-hydro').addEventListener('click', function () {
       highlight(this);
       showContent('content-hydro');

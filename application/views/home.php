@@ -9,20 +9,9 @@
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>" />
   <script src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@v1.3.0/dist/dotlottie-player.js"></script>
 </head>
+
 <body>
   <style>
-    #container {
-      width: 100%;
-      height: 500px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    #container:hover .attribution {
-      bottom: 20px;
-      opacity: 1;
-    }
-
     .center {
       width: 50%;
       position: absolute;
@@ -53,13 +42,6 @@
       opacity: 0.4;
     }
 
-    span {
-      display: inline-block;
-      margin-left: 5px;
-      font-size: 8pt;
-      color: rgba(43, 52, 59, 0.8);
-    }
-
     .attribution.dark {
       background: rgba(255, 255, 255, 0.04);
       opacity: 0.8;
@@ -78,9 +60,20 @@
       transition: transform 0.8s ease-out, opacity 0.8s ease-out;
     }
 
+    /* When active, move up and fade in */
     .owl-item.active .video-container img {
       transform: translateY(0);
       opacity: 1;
+      transition-delay: 2s;
+    }
+
+
+    /* When inactive, fade out without going back down */
+    .owl-item:not(.active) .video-container img {
+      opacity: 0;
+      transform: translateY(-50px);
+      /* Moves slightly up while disappearing */
+      transition: opacity 0.5s ease-in, transform 0.5s ease-in;
     }
 
     .text-container p {
@@ -97,7 +90,7 @@
   <nav class="navbar navbar-expand-md bg-white py-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="<?= base_url('') ?>">
-        <img src="<?= base_url('assets/images/final-logo-ecosystem.png') ?>" class="w-100 h-80" alt="home-page-banner">
+        <img src=" <?= base_url('assets/images/final-logo-ecosystem.png') ?>" class="w-100 h-80" alt="home-page-banner">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,7 +128,7 @@
           <dotlottie-player background="transparent" speed="1" loop="" autoplay=""></dotlottie-player>
         </div>
         <div class="owl-carousel owl-theme">
-          <div class="item fadeInUp">
+          <div class="item">
             <div class=" d-flex align-items-center justify-content-between">
               <div class="text-container  p-4">
                 <p class="">
@@ -143,12 +136,12 @@
                 </p>
               </div>
               <div class="video-container  d-flex justify-content-end align-items-center p-5">
-                <img src="https://kadence.com/wp-content/uploads/2023/09/slide-asset-2.png" class="image-fluid" alt="">
+                <img src="https://omnicoreplus.com/assets/om-upload/5.png" class="image-fluid" alt="">
               </div>
             </div>
           </div>
 
-          <div class="item fadeInUp">
+          <div class="item ">
             <div class=" d-flex align-items-center justify-content-between">
               <div class="text-container  p-4">
                 <p class="">
@@ -157,12 +150,12 @@
               </div>
               <div
                 class="video-container d-none d-sm-flex d-lg-flex d-md-flex justify-content-end align-items-center p-5">
-                <img src="https://kadence.com/wp-content/uploads/2023/09/slide-asset-2.png" class="image-fluid" alt="">
+                <img src="https://omnicoreplus.com/assets/om-upload/4.png" class="image-fluid" alt="">
               </div>
             </div>
           </div>
 
-          <div class="item fadeInUp">
+          <div class="item">
             <div class=" d-flex align-items-center justify-content-between">
               <div class="text-container  p-4">
                 <p class="">
@@ -170,7 +163,33 @@
                 </p>
               </div>
               <div class="video-container  d-flex justify-content-end align-items-center p-5">
-                <img src="https://kadence.com/wp-content/uploads/2023/09/slide-asset-2.png" class="image-fluid" alt="">
+                <img src="https://omnicoreplus.com/assets/om-upload/3.png" class="image-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class=" d-flex align-items-center justify-content-between">
+              <div class="text-container  p-4">
+                <p class="">
+                  A fresh approach to market research.
+                </p>
+              </div>
+              <div class="video-container  d-flex justify-content-end align-items-center p-5">
+                <img src="https://omnicoreplus.com/assets/om-upload/2.png" class="image-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class=" d-flex align-items-center justify-content-between">
+              <div class="text-container  p-4">
+                <p class="">
+                  A fresh approach to market research.
+                </p>
+              </div>
+              <div class="video-container  d-flex justify-content-end align-items-center p-5">
+                <img src="https://omnicoreplus.com/assets/om-upload/1.png" class="image-fluid" alt="">
               </div>
             </div>
           </div>
@@ -187,8 +206,7 @@
       <div class="container-fluid">
         <div class="row row-gap-3 py-3">
           <!-- card1 -->
-          <div class="col-md-3">
-            <a href="<?= base_url("reports") ?>" class="card   overflow-hidden w-100 card-overlay ">
+          <div class="col-md-3"> <a href="<?= base_url("reports") ?>" class="card overflow-hidden w-100 card-overlay ">
               <div class="card-body card-height-173 position-relative py-4">
                 <img src="<?= base_url() ?>assets/images/ECO SYSTEM REPORTS.jpg" class="d-none d-md-block" alt="" />
                 <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
@@ -202,8 +220,8 @@
             </a>
           </div>
 
-          <div class="col-md-3">
-            <a href="<?= base_url('custom_page') ?>" class="card overflow-hidden w-100 hero-card-overlay ">
+          <div class="col-md-3"> <a href="<?= base_url('custom_page') ?>"
+              class="card overflow-hidden w-100 hero-card-overlay ">
               <div class="card-body position-relative py-4">
                 <img src="<?= base_url() ?>assets/images/CUSTOM REQUIREMENTS.jpg" class="d-none d-lg-block" alt="" />
                 <h2 class="card-title d-flex justify-content-between align-items-center position-relative z-1">
@@ -403,8 +421,8 @@
 
       <div class="col-md-6 d-none d-lg-block position-relative">
         <div class="illustration w-100 ">
-          <img src="<?= base_url('assets/images/home.png') ?>" alt="Research Illustration"
-            style="filter:invert(47%) sepia(27%) saturate(2298%) hue-rotate(206deg) brightness(92%) contrast(18%); padding-top: 4rem; min-width:calc(100% + 12.5rem); max-width: 100%; height:auto; left:-130px;"
+          <img src=" <?= base_url('assets/images/home.png') ?>" alt="Research Illustration" style="filter:invert(47%) sepia(27%) saturate(2298%) hue-rotate(206deg) brightness(92%) contrast(18%);
+          padding-top: 4rem; min-width:calc(100% + 12.5rem); max-width: 100%; height:auto; left:-130px;"
             class="img-fluid position-absolute top-0 " />
         </div>
       </div>
@@ -497,10 +515,10 @@
       <div class="row row-gap-4">
         <div class="col-md-4 market__service-item">
           <div class="w-100 position-relative d-flex gap-3 justify-content-center align-items-start">
-            <i class="icon m02__icon ">
-              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
-                width="45" height="46" alt="">
-            </i>
+            <div class="center-card-box-image-area">
+              <img src="https://eninrac.com/assets/upload/market-tracking-icon-1.png" alt="market-tracking-icon-1.png"
+                width="45" height="46">
+            </div>
             <a href="https://eninrac.com/market-research-service/market-tracking-and-sizing" target="_blank"
               class="h-100 text-darklight-900">
               <h3 class="text-pre-title-l">Market Tracking & Sizing</h3>
@@ -516,10 +534,10 @@
 
         <div class="col-md-4 market__service-item">
           <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
-            <i class="icon m02__icon ">
-              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
-                width="45" height="46" alt="">
-            </i>
+            <div class="center-card-box-image-area">
+              <img src="https://eninrac.com/assets/upload/market-research-service-icon-2.png"
+                alt="market-tracking-icon-1.png" width="45" height="46">
+            </div>
             <a href="https://eninrac.com/market-research-service/market-analytics" target="_blank"
               class=" h-100 text-darklight-900">
               <h3 class="text-pre-title-l">Market Analytics
@@ -536,10 +554,10 @@
 
         <div class="col-md-4 market__service-item">
           <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
-            <i class="icon m02__icon ">
-              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
-                width="45" height="46" alt="">
-            </i>
+            <div class="center-card-box-image-area">
+              <img src="https://eninrac.com/assets/upload/market-tracking-icon-2.png" alt="market-tracking-icon-1.png"
+                width="45" height="46">
+            </div>
             <a href="https://eninrac.com/market-research-service/competitor-analysis" class=" h-100 text-darklight-900">
               <h3 class="text-pre-title-l">Competitor Analysis</h3>
               <p class="text-paragraph-m ">Conducting a competitor analysis, also called competitive analysis, is a
@@ -555,10 +573,10 @@
 
         <div class="col-md-4 market__service-item">
           <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
-            <i class="icon m02__icon ">
-              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
-                width="45" height="46" alt="">
-            </i>
+            <div class="center-card-box-image-area">
+              <img src="https://eninrac.com/assets/upload/market-tracking-icon-3.png" alt="market-tracking-icon-1.png"
+                width="45" height="46">
+            </div>
             <a href="https://eninrac.com/market-research-service/research-on-demand-tracking" target="_blank"
               class=" h-100 text-darklight-900">
               <h3 class="text-pre-title-l">Research on Demand Tracking</h3>
@@ -574,10 +592,10 @@
 
         <div class="col-md-4 market__service-item">
           <div class="w-100 position-relative gap-3 d-flex justify-content-center align-items-start">
-            <i class="icon m02__icon ">
-              <img src="https://kadence.com/wp-content/uploads/2020/07/customer-and-market-research_fill-services-3.svg"
-                width="45" height="46" alt="">
-            </i>
+            <div class="center-card-box-image-area">
+              <img src="https://eninrac.com/assets/upload/market-tracking-icon-1.png" alt="market-tracking-icon-1.png"
+                width="45" height="46">
+            </div>
             <a href="https://eninrac.com/market-research-service/" target="_blank" class=" h-100 text-darklight-900">
               <h3 class="text-pre-title-l">Market Research Service
               </h3>
@@ -1505,23 +1523,23 @@ Footer site map end
         <div class="col-md-6">
           <div class="row row-gap-3">
             <div class="col-md-6"><button class="w-75 enquiry-btn-item">
-                <a href="https://eninrac.com/submit-rfp#rfp-submitor" class="text-white">
+                <a href="https://eninrac.com/submit-rfp" target="_blank" class="text-white">
                   Request a Call</a></button></div>
             <div class="col-md-6">
               <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
-                    href="https://eninrac.com/submit-rfp#rfp-submitor">Request a Quote</a> </button></div>
+                    href="https://eninrac.com/submit-rfp" target="_blank">Request a Quote</a> </button></div>
             </div>
             <div class="col-md-6">
               <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
-                    href="https://eninrac.com/submit-rfp#rfp-submitor">Employment</a> </button></div>
+                    href="https://eninrac.com/submit-rfp" target="_blank">Employment</a> </button></div>
             </div>
             <div class="col-md-6">
               <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
-                    href="https://eninrac.com/submit-rfp#rfp-submitor">Marketing</a> </button></div>
+                    href="https://eninrac.com/submit-rfp" target="_blank">Marketing</a> </button></div>
             </div>
             <div class="col-md-6">
               <div class=""><button class="w-75 enquiry-btn-item"> <a class="text-white"
-                    href="https://eninrac.com/submit-rfp#rfp-submitor">others</a> </button></div>
+                    href="https://eninrac.com/submit-rfp" target="_blank">others</a> </button></div>
             </div>
           </div>
         </div>
@@ -1553,12 +1571,9 @@ Footer site map end
       </div>
       <div class="col-md-6 d-flex justify-content-center mt-5 mt-md-0">
         <picture>
-          <source media="(min-width: 640px)" srcset="
-                https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701813186/assets/home/home-events_cfh9zf.webp
-              " />
+          <source media="(min-width: 640px)" srcset="https://omnicoreplus.com/assets/om-upload/3-in-1-collage.png">
           <img class="img-fluid object-cover mx-auto mx-md-0 w-100 max-w-md h-auto"
-            src="https://res.cloudinary.com/dkklqdsqc/image/upload/q_auto,f_auto/v1701812086/assets/home/home-events-mobile__qffpzj.webp"
-            alt="" />
+            src="https://omnicoreplus.com/assets/om-upload/3-in-1-collage.png" alt="">
         </picture>
       </div>
     </div>
@@ -1591,7 +1606,8 @@ Footer site map end
       <div class="row" style="padding:2rem">
         <div class="col-md-5 col-lg-5 mb-4 mb-md-0">
           <div>
-            <img src="<?= base_url('assets/images/Asset 8.svg
+            <img src="
+            <?= base_url('assets/images/Asset 8.svg
             ') ?>" alt="Logo" class="logo mb-4 w-25 h-50">
           </div>
           <div class="contact-info">
@@ -1603,10 +1619,9 @@ Footer site map end
         <div class="col-md-7 col-lg-7">
           <div class="row" style="padding: 2rem;">
             <div class="col-6">
-              <div class="nav-links">
-                <a href="<?= base_url('reports') ?>" class="d-block" id="reports">Reports</a>
+              <div class="nav-links"> <a href="<?= base_url('reports') ?>" class=" d-block" id="reports">Reports</a>
                 <a href="<?= base_url('custom_page') ?>" class="d-block" id="custom_page">Custom Requirements</a>
-                <a href="<?= base_url('event') ?>" class="d-block" id="event">Surveys & VoC</a>
+                <a href="<?= base_url('event') ?>" class=" d-block" id="event">Surveys & VoC</a>
                 <a href="<?= base_url('contact_us') ?>" class="d-block">About us</a>
               </div>
             </div>
@@ -1657,7 +1672,6 @@ Footer site map end
   <script src="<?= base_url() ?>assets/js/embedScript.js"></script>
   <script src="<?= base_url('assets/js/footer.js') ?>"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 

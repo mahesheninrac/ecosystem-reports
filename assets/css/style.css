@@ -639,6 +639,24 @@ a {
   justify-content: center;
 }
 
+/* .container #container {
+  width: 100%;
+ 
+} */
+
+.container #container {
+  width: 400px;
+  right: 70px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container #container:hover .attribution {
+  bottom: 20px;
+  opacity: 1;
+}
+
 @media screen and (max-width:600px) {
   .container #container {
     width: 202.734px !important;
@@ -655,10 +673,7 @@ a {
   }
 }
 
-.container #container {
-  width: 400px;
-  right: 70px;
-}
+
 
 
 
