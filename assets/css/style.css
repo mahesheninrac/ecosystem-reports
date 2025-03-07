@@ -715,11 +715,18 @@ a {
   text-decoration: none;
 }
 
+.eco__side-media {
+  margin-left: -5vw;
+  position: relative;
+  max-width: 75%;
+  margin-bottom: 55px;
+}
+
 @media screen and (min-width: 1040px) {
   .eco__side-media {
     width: 602px !important;
     max-width: 50% !important;
-    margin-bottom: 110px;
+    margin-bottom: 110px !important;
   }
 
   .eco__m07__container {
@@ -743,7 +750,36 @@ a {
     line-height: 1.5625rem;
   }
 
+  .eco__small-image {
+    top: auto !important;
+    left: auto !important;
+    right: 6px;
+    bottom: -63px;
+    width: 152px !important;
+    height: 152px !important;
+  }
+
 }
+
+@media screen and (min-width: 660px) {
+  .eco__small-image {
+    width: 152px !important;
+    height: 152px !important;
+    top: 28vw !important;
+  }
+}
+
+.eco__small-image {
+  object-fit: cover;
+  border-radius: 100%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 38vw;
+  left: calc(77vw - 60px);
+}
+
+
 
 
 

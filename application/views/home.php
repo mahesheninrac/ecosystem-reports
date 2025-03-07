@@ -935,11 +935,9 @@ Testimonials
     }
   </style>
 
-  <section class="d-lg-flex d-md-flex position-relative w-100 overflow-hidden">
+  <section class="pb-3 d-lg-flex d-md-flex position-relative w-100 overflow-hidden">
     <div class="container eco__m07__container">
-
-
-      <div class="eco__side-media" style="margin-left: -5vw;position: relative;max-width: 75%;margin-bottom: 55px;">
+      <div class="eco__side-media" style="">
         <div class="" style="padding-bottom: 71.92691%;position: relative;width: 100%;height: 0;">
           <div class=""
             style="position: absolute;right: 0;bottom: 0;height: 0;width: 142.36%;padding-bottom: 142.36%;-webkit-clip-path: circle(50% at 50% 50%);clip-path: circle(50% at 50% 50%);background-color: #f6f7f8;">
@@ -948,6 +946,9 @@ Testimonials
               height="866" alt="">
           </div>
         </div>
+        <img class="eco__small-image"
+          src="https://einfews.energyinfra.market/assets/om-upload/testimonial-circle-2-304x304-1-.png" width="304"
+          height="304" alt="">
       </div>
 
       <div class="eco__testimonials">
