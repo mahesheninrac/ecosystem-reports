@@ -136,7 +136,8 @@
                 </p>
               </div>
               <div class="video-container  d-flex justify-content-end align-items-center p-5">
-                <img src="https://omnicoreplus.com/assets/om-upload/5.png" class="image-fluid" alt="">
+                <img src="https://omnicoreplus.com/assets/om-upload/5.png" style="opacity:0;" class="image-fluid"
+                  alt="">
               </div>
             </div>
           </div>
@@ -150,7 +151,8 @@
               </div>
               <div
                 class="video-container d-none d-sm-flex d-lg-flex d-md-flex justify-content-end align-items-center p-5">
-                <img src="https://omnicoreplus.com/assets/om-upload/4.png" class="image-fluid" alt="">
+                <img src="https://omnicoreplus.com/assets/om-upload/4.png" class="image-fluid" style="opacity:0;"
+                  alt="">
               </div>
             </div>
           </div>
@@ -168,6 +170,11 @@
             </div>
           </div>
 
+          <!-- blck
+           
+          https://omnicoreplus.com/assets/om-upload/new-project-1-.png
+          -->
+
           <div class="item">
             <div class=" d-flex align-items-center justify-content-between">
               <div class="text-container  p-4">
@@ -176,7 +183,8 @@
                 </p>
               </div>
               <div class="video-container  d-flex justify-content-end align-items-center p-5">
-                <img src="https://omnicoreplus.com/assets/om-upload/2.png" class="image-fluid" alt="">
+                <img src="https://omnicoreplus.com/assets/om-upload/2.png" style="opacity:0;" class="image-fluid"
+                  alt="">
               </div>
             </div>
           </div>
@@ -189,7 +197,8 @@
                 </p>
               </div>
               <div class="video-container  d-flex justify-content-end align-items-center p-5">
-                <img src="https://omnicoreplus.com/assets/om-upload/1.png" class="image-fluid" alt="">
+                <img src="https://omnicoreplus.com/assets/om-upload/1.png" style="opacity:0;" class="image-fluid"
+                  alt="">
               </div>
             </div>
           </div>
@@ -781,7 +790,7 @@
 
     sectors.forEach(sect => {
       let div = document.createElement('div');
-      div.setAttribute('class', ' d-flex m06__link-wrap col-md-6');
+      div.setAttribute('class', ' d-flex m06__link-wrap col-md-6 col-sm-6');
       div.innerHTML = `
             <a href="https://store.eninrac.com/${sect.link}" class="servicelink-item service_list_item d-flex align-items-center gap-2">
               <div class="service_list_item-icon"></div>
@@ -926,345 +935,260 @@ Testimonials
     }
   </style>
 
-  <section class="d-flex position-relative w-100  d-none">
-    <!-- <div class="eco__media">
-      <div class="eco__large-image">
-        <div class="eco__large-image-wrap">
-         
+  <section class="d-lg-flex d-md-flex position-relative w-100 overflow-hidden">
+    <div class="container eco__m07__container">
+
+
+      <div class="eco__side-media" style="margin-left: -5vw;position: relative;max-width: 75%;margin-bottom: 55px;">
+        <div class="" style="padding-bottom: 71.92691%;position: relative;width: 100%;height: 0;">
+          <div class=""
+            style="position: absolute;right: 0;bottom: 0;height: 0;width: 142.36%;padding-bottom: 142.36%;-webkit-clip-path: circle(50% at 50% 50%);clip-path: circle(50% at 50% 50%);background-color: #f6f7f8;">
+            <img class="eco__testimonials-image"
+              src="https://einfews.energyinfra.market/assets/om-upload/testimonial-circle-1-1-.png" width="1202"
+              height="866" alt="">
+          </div>
         </div>
       </div>
-    </div> -->
 
-    <div class="">
-      <img class="eco__testimonials-image" src="https://eninrac.com/assets/upload/how-eninrac-works-banner.png" alt="">
-    </div>
+      <div class="eco__testimonials">
+        <div class="container">
+          <div class="carousel-card owl-carousel owl-theme">
+            <div class="item">
+              <div class="content-text-container p-3">
+                <div class="d-flex" style="max-width: 150px;">
+                  <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                    src="https://eninrac.com/assets/upload/Artson-LOGO.png" alt="">
+                </div>
+                <div class="case-text">
+                  <i class="fs-20 icofont-quote-left"></i>
+                  <p class="fs-16">Getting custom research support on cryogenic tankers from eninrac
+                    consulting was a good experience. Team is very professional.</p>
+                </div>
+              </div>
+            </div>
 
+            <div class="item">
+              <i class="fs-20 icofont-quote-left"></i>
+              <p class="fs-14">Embassy found the study on coal consumption and future demand in India
+                until 2030 beneficial for formulating key policies for Indonesia w.r.t Indian dynamics
+              </p>
+              <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                src="https://eninrac.com/assets/upload/Indonasia-LOGO.png" alt="">
 
-    <div class="eco__testimonials" style="width: 50%;">
-      <div class="container">
-        <div class="carousel-card owl-carousel owl-theme owl-loaded owl-drag">
-          <div class="owl-stage-outer">
-            <div class="owl-stage" style="transform: translate3d(-4440px, 0px, 0px); transition: 0.7s; width: 7770px;">
-              <div class="owl-item ">
-                <div class="row  p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/artson-engineering" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100 d-none" src="https://eninrac.com/assets/upload/Artson.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Artson-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">Getting custom research support on cryogenic tankers from eninrac
-                                consulting was a good experience. Team is very professional.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+            </div>
 
+            <div class="item ">
+              <a href="market-response/deloitte" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/Deloitte-LOGO.png" alt="">
+                      </div>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">'The market research services rendered by eninrac was very insightful for
+                          us. Safely, we can say they are disrupting the domain in their own way</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
+            </div>
 
-              <div class="owl-item" style="width: 1110px;">
-                <div class="row  p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/embassy-of-indonesia" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Indonasia.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Indonasia-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">Embassy found the study on coal consumption and future demand in India
-                                until 2030 beneficial for formulating key policies for Indonesia w.r.t Indian dynamics
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+            <div class="item">
+              <a href="market-response/mckinsey-and-company" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/Mckinsey-LOGO.png" alt="">
                       </div>
-                    </a>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">The D2I model prepared by the eninrac team, was an interesting piece.
+                          It helped us learn unit wise dismantling opportunity for thermal plants</p>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </a>
+            </div>
 
+            <div class="item ">
+              <a href="market-response/ge-energy" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/GE-LOGO.png" alt="">
+                      </div>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">The business intelligence service for Indian wind turbines by eninrac
+                          team
+                          was fantastic for us.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
+            </div>
 
-              <div class="owl-item " style="width: 1110px;">
-                <div class="row  p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/deloitte" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Deloitte.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Deloitte-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">'The market research services rendered by eninrac was very insightful for
-                                us. Safely, we can say they are disrupting the domain in their own way</p>
-                            </div>
-                          </div>
-                        </div>
+            <div class="item ">
+              <a href="market-response/artson-engineering" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/Artson-LOGO.png" alt="">
                       </div>
-                    </a>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">Getting custom research support on cryogenic tankers from eninrac
+                          consulting was a good experience. Team is very professional.</p>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </a>
+            </div>
 
-                </div>
-              </div>
-              <div class="owl-item" style="width: 1110px;">
-                <div class="row p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/mckinsey-and-company" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Mckinsey.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Mckinsey-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">The D2I model prepared by the eninrac team, was an interesting piece.
-                                It helped us learn unit wise dismantling opportunity for thermal plants</p>
-                            </div>
-                          </div>
-                        </div>
+            <div class="item">
+              <a href="market-response/deloitte" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/Deloitte-LOGO.png" alt="">
                       </div>
-                    </a>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">'The market research services rendered by eninrac was very insightful for
+                          us. Safely, we can say they are disrupting the domain in their own way</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
+            </div>
 
-              <div class="owl-item " style="width: 1110px;">
-                <div class="row p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/ge-energy" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/GE.jpg">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/GE-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">The business intelligence service for Indian wind turbines by eninrac
-                                team
-                                was fantastic for us.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-item " style="width: 1110px;">
-                <div class="row  p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/artson-engineering" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Artson.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Artson-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">Getting custom research support on cryogenic tankers from eninrac
-                                consulting was a good experience. Team is very professional.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-item active" style="width: 1110px;">
-                <div class="row  p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/deloitte" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Deloitte.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Deloitte-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">'The market research services rendered by eninrac was very insightful for
-                                us. Safely, we can say they are disrupting the domain in their own way</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="item">
+              <a href="market-response/ptc-india" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
 
-              <div class="owl-item" style="width: 1110px;">
-                <div class="row p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/ptc-india" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/PTC.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo pb-3 d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/PTC-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">Latent power demand estimates for 3 states of India was a game changer
-                                for
-                                us to re-orient the power trading segment in India</p>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="content-text-container p-3">
+                      <div class="com-logo pb-3">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/PTC-LOGO.png" alt="">
                       </div>
-                    </a>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">Latent power demand estimates for 3 states of India was a game changer
+                          for
+                          us to re-orient the power trading segment in India</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="owl-item " style="width: 1110px;">
-                <div class="row p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/mckinsey-and-company" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Mckinsey.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="assets/upload/Mckinsey-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">The D2I model prepared by the eninrac team, was an interesting piece.
-                                It helped us learn unit wise dismantling opportunity for thermal plants</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-item " style="width: 1110px;">
-                <div class="row p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/ge-energy" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/GE.jpg">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="assets/upload/GE-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">The business intelligence service for Indian wind turbines by eninrac
-                                team
-                                was fantastic for us.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-item " style="width: 1110px;">
-                <div class="row  p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/artson-engineering" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Artson.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Artson-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">Getting custom research support on cryogenic tankers from eninrac
-                                consulting was a good experience. Team is very professional.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              </a>
+            </div>
 
-              <div class="owl-item " style="width: 1110px;">
-                <div class="row p-3">
-                  <div class="col-md-12">
-                    <a href="market-response/embassy-of-indonesia" target="blank">
-                      <div class="carosole-wrapper">
-                        <div class="carosole-box d-flex w-100">
-                          <div class="content-image-container position-relative">
-                            <img class="w-100 h-100" src="https://eninrac.com/assets/upload/Indonasia.jpg" alt="">
-                          </div>
-                          <div class="content-text-container p-3 position-relative">
-                            <div class="com-logo d-flex justify-content-end">
-                              <img src="https://eninrac.com/assets/upload/Indonasia-LOGO.png" alt="">
-                            </div>
-                            <div class="case-text position-absolute">
-                              <i class="fs-20 icofont-quote-left"></i>
-                              <p class="fs-14">Embassy found the study on coal consumption and future demand in India
-                                until 2030 beneficial for formulating key policies for Indonesia w.r.t Indian dynamics
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+            <div class="item ">
+              <a href="market-response/mckinsey-and-company" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="assets/upload/Mckinsey-LOGO.png" alt="">
                       </div>
-                    </a>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">The D2I model prepared by the eninrac team, was an interesting piece.
+                          It helped us learn unit wise dismantling opportunity for thermal plants</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
+            </div>
+
+            <div class="item ">
+              <a href="market-response/ge-energy" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="assets/upload/GE-LOGO.png" alt="">
+                      </div>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">The business intelligence service for Indian wind turbines by eninrac
+                          team
+                          was fantastic for us.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item ">
+              <a href="market-response/artson-engineering" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box d-flex w-100">
+
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/Artson-LOGO.png" alt="">
+                      </div>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">Getting custom research support on cryogenic tankers from eninrac
+                          consulting was a good experience. Team is very professional.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item ">
+              <a href="market-response/embassy-of-indonesia" target="blank">
+                <div class="carosole-wrapper">
+                  <div class="carosole-box w-100">
+                    <div class="content-text-container p-3">
+                      <div class="com-logo">
+                        <img width="144" height="50" style="object-fit:scale-down; margin-bottom:17px;"
+                          src="https://eninrac.com/assets/upload/Indonasia-LOGO.png" alt="">
+                      </div>
+                      <div class="case-text">
+                        <i class="fs-20 icofont-quote-left"></i>
+                        <p class="fs-14">Embassy found the study on coal consumption and future demand in India
+                          until 2030 beneficial for formulating key policies for Indonesia w.r.t Indian dynamics
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-
-
   </section>
   <!-- ///////////////////////////////////////////////////////////////////////
 Testimonials end
@@ -1274,7 +1198,7 @@ Testimonials end
 Footer site map 
  ///////////////////////////////////////////////////////////////////////////-->
 
-  <section class="footer-site-map contact-site-details">
+  <section class="footer-site-map py-4 contact-site-details">
     <div class="container" style="margin-bottom: 55px;">
       <div class="row">
         <div class="col-md-7">
@@ -1341,9 +1265,7 @@ Footer site map
                               class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
                               <i class="icofont-long-arrow-right"></i></span>
                           </h3>
-
                         </div>
-
                       </a>
                     </div>
                   </div>
@@ -1357,8 +1279,6 @@ Footer site map
                     </div>
                   </div>
                 </div>
-
-
               </div>
 
               <div class="eco__posts" id="vantedge" style="display: none;">
@@ -1378,13 +1298,10 @@ Footer site map
                           class=" d-flex justify-content-center align-items-center me-2 bg-primary-500 text-white rounded-circle">
                           <i class="icofont-long-arrow-right"></i></span>
                       </h3>
-
                     </div>
-
                   </a>
                 </div>
               </div>
-
               <div class="eco__posts" id="warehouses" style="display: none;">
                 <div class="small-article-eco-post"
                   style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
@@ -1431,7 +1348,6 @@ Footer site map
                 </div>
 
               </div>
-
               <div class="eco__posts" id="horizon" style="display: none;">
                 <div class="small-article-eco-post"
                   style=" background-color: var(--primary-100); color:#000; border-radius:2px; margin-top:1rem; overflow:hidden;">
@@ -1484,15 +1400,12 @@ Footer site map
           </div>
 
         </div>
-
-
       </div>
     </div>
 
     <script>
       const buttons = document.querySelectorAll(".eco-footer__button-item");
       const contents = document.querySelectorAll(".eco__posts");
-
       buttons.forEach(button => {
         button.addEventListener("click", () => {
           document.querySelector(".is-active").classList.remove("is-active");
@@ -1501,7 +1414,6 @@ Footer site map
           contents.forEach(content => {
             content.style.display = "none";
           });
-
           const target = button.getAttribute("data-tab");
           document.getElementById(target).style.display = "block";
         });
@@ -1578,9 +1490,7 @@ Footer site map end
       </div>
     </div>
   </section>
-
   <!-- contact us -->
-
   <section class="position-relative"
     style="min-height: 400px; margin:0 ; background-image: linear-gradient(#cac0ff,#041e42);">
     <div class="wrapper contact"
@@ -1599,7 +1509,6 @@ Footer site map end
       </div>
     </div>
   </section>
-
   <!-- footer -->
   <footer class="footer text-center text-md-start z-1">
     <div class="container-fluid">
@@ -1656,7 +1565,6 @@ Footer site map end
       </div>
     </div>
   </footer>
-
   <!--  -->
   <script src="<?= base_url() ?>assets/js/jquery.min.js"></script>
   <script src="<?= base_url() ?>assets/plugins/popper.js"></script>

@@ -330,7 +330,7 @@ a {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero-section {
     flex-direction: column;
   }
@@ -338,6 +338,10 @@ a {
   .hero-section .text-container,
   .hero-section>div {
     max-width: 100%;
+  }
+
+  .eco__testimonials {
+    width: 100% !important;
   }
 }
 
@@ -359,6 +363,13 @@ a {
 }
 
 /* ends */
+
+/* Eco testimonials */
+.eco__testimonials {
+  width: 50%;
+}
+
+
 
 
 /* eco case study section */
@@ -703,6 +714,38 @@ a {
 a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 1040px) {
+  .eco__side-media {
+    width: 602px !important;
+    max-width: 50% !important;
+    margin-bottom: 110px;
+  }
+
+  .eco__m07__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .eco__testimonials {
+    width: 50%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 50px 0 50px auto;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+
+}
+
+
 
 .card {
   background-color: #303458;
